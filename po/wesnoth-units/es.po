@@ -15,20 +15,21 @@
 # Iris Morelle <shadowm@wesnoth.org>, 2008, 2009.
 # Xavier Novella <Xaviernovellasinde@gmail.com>, 2012, 2014.
 # Pepe <donpepe1963@gmail.com>, 2014, 2017.
+# Toranks <toranksmervat@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2022-12-18 01:09 UTC\n"
-"PO-Revision-Date: 2021-10-23 13:07+0200\n"
-"Last-Translator: Pepe <donpepe1963@gmail.com>\n"
+"POT-Creation-Date: 2023-01-15 00:20 UTC\n"
+"PO-Revision-Date: 2023-01-15 10:18+0100\n"
+"Last-Translator: Toranks <toranksmervat@gmail.com>\n"
 "Language-Team: wesnoth-es-trad-1_14@googlegroups.com\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. [attack]: type=impact
 #. [attack]: type=arcane
@@ -230,7 +231,7 @@ msgstr "mangual"
 #: data/core/units/elves/Scout.cfg:32 data/core/units/elves/Sharpshooter.cfg:24
 #: data/core/units/humans/Horse_Knight.cfg:23
 #: data/core/units/humans/Horse_Paladin.cfg:39
-#: data/core/units/humans/Loyalist_Cavalryman.cfg:43
+#: data/core/units/humans/Loyalist_Cavalryman.cfg:59
 #: data/core/units/humans/Loyalist_Dragoon.cfg:35
 #: data/core/units/humans/Loyalist_Lieutenant.cfg:27
 #: data/core/units/humans/Loyalist_Longbowman.cfg:25
@@ -293,7 +294,7 @@ msgstr "arco"
 #: data/core/units/gryphons/Gryphon_Master.cfg:28
 #: data/core/units/gryphons/Gryphon_Rider.cfg:27
 #: data/core/units/monsters/Bear.cfg:51
-#: data/core/units/monsters/Elder_Falcon.cfg:35
+#: data/core/units/monsters/Elder_Falcon.cfg:41
 #: data/core/units/monsters/Falcon.cfg:84
 #: data/core/units/monsters/Icemonax.cfg:53
 #: data/core/units/monsters/Icemonax_Greater.cfg:54
@@ -483,11 +484,13 @@ msgstr "maldición"
 #: data/core/units/goblins/Knight.cfg:34
 #: data/core/units/goblins/Pillager.cfg:32
 #: data/core/units/goblins/Wolf_Rider.cfg:46
-#: data/core/units/monsters/Ant.cfg:33 data/core/units/monsters/Bear.cfg:42
-#: data/core/units/monsters/Caribe.cfg:112
+#: data/core/units/monsters/Ant.cfg:33 data/core/units/monsters/Ant_Fire.cfg:69
+#: data/core/units/monsters/Ant_Firebane.cfg:70
+#: data/core/units/monsters/Ant_Firebomb.cfg:72
+#: data/core/units/monsters/Ant_Soldier.cfg:38
+#: data/core/units/monsters/Bear.cfg:42 data/core/units/monsters/Caribe.cfg:112
 #: data/core/units/monsters/Caribe_Hunter.cfg:113
 #: data/core/units/monsters/Caribe_Nibbler.cfg:125
-#: data/core/units/monsters/Fire_Ant.cfg:64
 #: data/core/units/monsters/Giant_Spider.cfg:28
 #: data/core/units/monsters/Sea_Serpent.cfg:27
 #: data/core/units/monsters/Water_Serpent.cfg:42
@@ -511,6 +514,7 @@ msgstr "colmillos"
 #: data/core/units/monsters/Boar_Piglet.cfg:50
 #: data/core/units/monsters/Crocodile.cfg:159
 #: data/core/units/monsters/Dragonfly.cfg:30
+#: data/core/units/monsters/Dragonfly_Grand.cfg:31
 #: data/core/units/monsters/Dragonfly_Naiad.cfg:61
 #: data/core/units/monsters/Fire_Dragon.cfg:32
 #: data/core/units/monsters/Frost_Stoat.cfg:94
@@ -598,16 +602,6 @@ msgstr "frenesí berserker"
 
 #. [unit_type]: id=Dwarvish Masked Dragonguard, race=dwarf
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Dragonguard.cfg:17
-#, fuzzy
-#| msgid ""
-#| "It is not clear why the Dragonguards are called what they are, a name "
-#| "given by their dwarven brethren. Some speculate that the name comes from "
-#| "their weapon of choice, these strange staves that belch fire and death. "
-#| "Others have surmised that it is because such weapons would be a threat "
-#| "against even a true Dragon, should such a thing be seen again in the "
-#| "known world. Whatever the case, it is for these weapons that the "
-#| "guardians of the great Dwarven citadels are both renowned and feared; "
-#| "weapons that have broken the mightiest of warriors with a single blow."
 msgid ""
 "It is not clear why the Dragonguards are called what they are, a name given "
 "by their dwarven brethren. Some speculate that the name comes from their "
@@ -674,8 +668,8 @@ msgstr ""
 
 #. [attack]: type=blade
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Fighter.cfg:32
-#: data/core/units/dunefolk/Explorer.cfg:34
-#: data/core/units/dunefolk/Rover.cfg:31
+#: data/core/units/dunefolk/Explorer.cfg:35
+#: data/core/units/dunefolk/Rover.cfg:32
 #: data/core/units/dunefolk/Wayfarer.cfg:43
 #: data/core/units/dwarves/Explorer.cfg:33
 #: data/core/units/dwarves/Fighter.cfg:57
@@ -744,7 +738,7 @@ msgstr ""
 #: data/core/units/goblins/Spearman.cfg:36
 #: data/core/units/humans/Horseman.cfg:23
 #: data/core/units/humans/Loyalist_Javelineer.cfg:30
-#: data/core/units/humans/Loyalist_Spearman.cfg:80
+#: data/core/units/humans/Loyalist_Spearman.cfg:85
 #: data/core/units/merfolk/Hoplite.cfg:35 data/core/units/merfolk/Hunter.cfg:24
 #: data/core/units/merfolk/Hunter.cfg:32
 #: data/core/units/merfolk/Javelineer.cfg:23
@@ -779,7 +773,7 @@ msgstr "lanza"
 #: data/core/units/dwarves/Sentinel.cfg:47
 #: data/core/units/dwarves/Stalwart.cfg:42
 #: data/core/units/humans/Loyalist_Javelineer.cfg:41
-#: data/core/units/humans/Loyalist_Spearman.cfg:92
+#: data/core/units/humans/Loyalist_Spearman.cfg:97
 msgid "javelin"
 msgstr "jabalina"
 
@@ -857,19 +851,6 @@ msgstr "atronadora"
 
 #. [unit_type]: id=Dwarvish Masked Thunderguard, race=dwarf
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Thunderguard.cfg:18
-#, fuzzy
-#| msgid ""
-#| "The Dwarven Thunderguards are famed for their curious weaponry, these "
-#| "strange staves of wood and iron that make a thunderous noise in their "
-#| "anger. The machinations behind this weaponry are a mystery, a secret "
-#| "taken to the grave by the dwarves of Knalga who wield them, and are "
-#| "assumed to have even forged them. The most that is known are reports of "
-#| "dwarves pouring a strange black dust into the mouth of their weapons, "
-#| "which some say is a food to fuel the beast imprisoned within.\n"
-#| "\n"
-#| "Though a single shot from these ‘thundersticks’ can take several minutes "
-#| "to prepare, the results are seen by the Dwarves as being well worth the "
-#| "wait."
 msgid ""
 "The Dwarven Thunderguards are famed for their curious weaponry, these "
 "strange staves of wood and iron that make a thunderous noise in their anger. "
@@ -1808,9 +1789,9 @@ msgstr ""
 
 #. [attack]: type=pierce
 #: data/core/units/dunefolk/Cataphract.cfg:64
-#: data/core/units/dunefolk/Explorer.cfg:43
+#: data/core/units/dunefolk/Explorer.cfg:44
 #: data/core/units/dunefolk/Horse_Archer.cfg:36
-#: data/core/units/dunefolk/Rider.cfg:36 data/core/units/dunefolk/Rover.cfg:40
+#: data/core/units/dunefolk/Rider.cfg:36 data/core/units/dunefolk/Rover.cfg:41
 #: data/core/units/dunefolk/Sunderer.cfg:41
 #: data/core/units/dunefolk/Wayfarer.cfg:52
 #: data/core/units/dunefolk/Windbolt.cfg:41
@@ -1823,7 +1804,7 @@ msgid "Dune Explorer"
 msgstr "Explorador barján"
 
 #. [unit_type]: id=Dune Explorer, race=dunefolk
-#: data/core/units/dunefolk/Explorer.cfg:20
+#: data/core/units/dunefolk/Explorer.cfg:21
 msgid ""
 "A slow-moving caravan out in the open desert is a prime target for bandits "
 "or marauders. In order to protect themselves, the Dunefolk employ special "
@@ -2212,7 +2193,7 @@ msgid "Dune Rover"
 msgstr "Caminante barján"
 
 #. [unit_type]: id=Dune Rover, race=dunefolk
-#: data/core/units/dunefolk/Rover.cfg:20
+#: data/core/units/dunefolk/Rover.cfg:21
 msgid ""
 "Originating from the nomadic wanderers of the open deserts, rovers are the "
 "representation of the most well-balanced Dunefolk soldier: flexible, mobile, "
@@ -4009,7 +3990,7 @@ msgstr ""
 #. [attack]: type=blade
 #: data/core/units/humans/Horse_Grand_Knight.cfg:24
 #: data/core/units/humans/Loyalist_Cavalier.cfg:36
-#: data/core/units/humans/Loyalist_General.cfg:38
+#: data/core/units/humans/Loyalist_General.cfg:44
 #: data/core/units/humans/Loyalist_Grand_Marshal.cfg:38
 #: data/core/units/humans/Loyalist_Royal_Guard.cfg:33
 msgid "longsword"
@@ -4176,7 +4157,7 @@ msgstr ""
 #: data/core/units/humans/Loyalist_Cavalier.cfg:45
 #: data/core/units/humans/Loyalist_Dragoon.cfg:44
 #: data/core/units/humans/Loyalist_Duelist.cfg:45
-#: data/core/units/humans/Loyalist_General.cfg:47
+#: data/core/units/humans/Loyalist_General.cfg:53
 #: data/core/units/humans/Loyalist_Grand_Marshal.cfg:47
 #: data/core/units/humans/Loyalist_Lieutenant.cfg:36
 #: data/core/units/humans/Loyalist_Master_at_Arms.cfg:40
@@ -4309,7 +4290,7 @@ msgid "General"
 msgstr "General"
 
 #. [unit_type]: id=General, race=human
-#: data/core/units/humans/Loyalist_General.cfg:24
+#: data/core/units/humans/Loyalist_General.cfg:30
 msgid ""
 "As the leaders of their armies, Generals are responsible for the protection "
 "of large or important areas in the kingdoms to which they have sworn fealty. "
@@ -4474,15 +4455,11 @@ msgstr ""
 
 #. [special_note]
 #: data/core/units/humans/Loyalist_Javelineer.cfg:20
-#, fuzzy
-#| msgid ""
-#| "Compared to other loyalists, Halberdiers have a higher resistance to "
-#| "‘pierce’ attacks."
 msgid ""
 "Compared to other loyalists, Javelineers have a higher resistance to "
 "‘pierce’ attacks."
 msgstr ""
-"Comparados con otros leales, los alabarderos tienen una resistencia mayor a "
+"Comparados con otros leales, los jabalineros tienen una resistencia mayor a "
 "los ataques de penetración."
 
 #. [unit_type]: id=Lieutenant, race=human
@@ -5044,10 +5021,6 @@ msgstr ""
 
 #. [special_note]
 #: data/core/units/humans/Mage_Silver.cfg:25
-#, fuzzy
-#| msgid ""
-#| "SPECIAL_NOTE^ Silver Magi are well-attuned to their magical natures and "
-#| "are highly resistant to non-physical damage."
 msgid ""
 "SPECIAL_NOTE^Silver Magi are well-attuned to their magical natures and are "
 "highly resistant to non-physical damage."
@@ -5943,6 +5916,72 @@ msgstr ""
 "en las profundidades de la tierra hasta las cimas de las altas montañas. "
 "Aunque normalmente no son hostiles, pueden morder a corta distancia."
 
+#. [unit_type]: id=Fire Ant, race=monster
+#: data/core/units/monsters/Ant_Fire.cfg:11
+msgid "Fire Ant"
+msgstr "Hormiga de fuego"
+
+#. [unit_type]: id=Fire Ant, race=monster
+#. [unit_type]: id=Firebane Ant, race=monster
+#: data/core/units/monsters/Ant_Fire.cfg:51
+#: data/core/units/monsters/Ant_Firebane.cfg:51
+msgid ""
+"Small but deadly in large numbers, fire ants possess fierce fangs and an "
+"unusual ability to generate fire. Though these creatures typically function "
+"as scavengers, a burrow of fire ants can become aggressive when provoked and "
+"have even been known to attack small groups of threatening troops."
+msgstr ""
+"Pequeñas pero mortales en números grandes, las hormigas de fuego poseen "
+"colmillos feroces y una habilidad inusual para generar fuego. Aunque estas "
+"criaturas suelen ser carroñeras, una madriguera de hormigas de fuego puede "
+"volverse agresiva cuando se la provoca e incluso se sabe que ataca a grupos "
+"pequeños de tropas amenazantes."
+
+#. [attack]: type=fire
+#: data/core/units/monsters/Ant_Fire.cfg:78
+#: data/core/units/monsters/Ant_Firebane.cfg:79
+#: data/core/units/monsters/Ant_Firebomb.cfg:81
+msgid "fire"
+msgstr "fuego"
+
+#. [unit_type]: id=Firebane Ant, race=monster
+#: data/core/units/monsters/Ant_Firebane.cfg:11
+msgid "Firebane Ant"
+msgstr "Hormiga aterrafuego"
+
+#. [unit_type]: id=Firebomb Ant, race=monster
+#: data/core/units/monsters/Ant_Firebomb.cfg:11
+msgid "Firebomb Ant"
+msgstr "Hormiga bomba"
+
+#. [unit_type]: id=Firebomb Ant, race=monster
+#: data/core/units/monsters/Ant_Firebomb.cfg:51
+msgid ""
+"More developed and specialized Fire Ants can take different forms. The "
+"firebomb ants can produce and carry large quantities of their flammable "
+"spray in a swollen abdomen, which can make for a fearsome attack, but it "
+"also makes them weak to physical attacks and they cannot sustain the fire as "
+"their health fails."
+msgstr ""
+
+#. [unit_type]: id=Soldier Ant, race=monster
+#: data/core/units/monsters/Ant_Soldier.cfg:4
+msgid "Soldier Ant"
+msgstr "Hormiga soldado"
+
+#. [unit_type]: id=Soldier Ant, race=monster
+#: data/core/units/monsters/Ant_Soldier.cfg:19
+msgid ""
+"Giant Ants are common in almost any environment, from caverns deep under the "
+"earth to the tops of tall mountains. Most common are the nondescript workers "
+"and scouts, but in times of conflict, a more dangerous Soldier caste enters "
+"the fray."
+msgstr ""
+"Las hormigas gigantes son comunes en casi cualquier entorno, desde cavernas "
+"en las profundidades de la tierra hasta las cimas de las altas montañas. Los "
+"más comunes son los simples trabajadores y los exploradores, pero en tiempos "
+"de conflicto, una casta de soldados más peligrosa entra en la refriega."
+
 #. [unit_type]: id=Cave Bear, race=monster
 #: data/core/units/monsters/Bear.cfg:4
 msgid "Cave Bear"
@@ -6005,10 +6044,8 @@ msgstr ""
 
 #. [unit_type]: id=Caribe, race=monster
 #: data/core/units/monsters/Caribe.cfg:8
-#, fuzzy
-#| msgid "Muharib"
 msgid "Caribe"
-msgstr "Muharib"
+msgstr "Caribe"
 
 #. [unit_type]: id=Caribe, race=monster
 #: data/core/units/monsters/Caribe.cfg:28
@@ -6023,10 +6060,8 @@ msgstr ""
 
 #. [unit_type]: id=Hunter Caribe, race=monster
 #: data/core/units/monsters/Caribe_Hunter.cfg:8
-#, fuzzy
-#| msgid "Muharib"
 msgid "Hunter Caribe"
-msgstr "Muharib"
+msgstr "Cazador caribe"
 
 #. [unit_type]: id=Hunter Caribe, race=monster
 #: data/core/units/monsters/Caribe_Hunter.cfg:29
@@ -6136,20 +6171,35 @@ msgstr "tinta"
 
 #. [unit_type]: id=Dragonfly, race=monster
 #: data/core/units/monsters/Dragonfly.cfg:5
-#, fuzzy
-#| msgid "Dragoon"
 msgid "Dragonfly"
-msgstr "Dragón"
+msgstr "Libélula"
 
 #. [unit_type]: id=Dragonfly, race=monster
 #: data/core/units/monsters/Dragonfly.cfg:27
 msgid ""
 "The giant dragonflies seen in some of the swamps, rivers, and lakes around "
-"Wesnoth enjoy a longer life cycle than the smaller, more common types.  The "
-"adult form can live indefiniately, slowly growing to a final moult.  They "
-"are generally territorial, but can cooperate in small groups to confront "
-"common foes or large prey."
+"Wesnoth enjoy a longer life cycle than the smaller, more common types. The "
+"adult form can live indefinitely, slowly growing to a final moult. They are "
+"generally territorial, but can cooperate in small groups to confront common "
+"foes or large prey."
 msgstr ""
+
+#. [unit_type]: id=Grand Dragonfly, race=monster
+#: data/core/units/monsters/Dragonfly_Grand.cfg:5
+msgid "Grand Dragonfly"
+msgstr "Gran libélula"
+
+#. [unit_type]: id=Grand Dragonfly, race=monster
+#: data/core/units/monsters/Dragonfly_Grand.cfg:28
+msgid "Dragonflies that survive long enough grow into a final, grander form."
+msgstr ""
+
+#. [attack]: type=pierce
+#: data/core/units/monsters/Dragonfly_Grand.cfg:43
+#: data/core/units/monsters/Giant_Scorpion.cfg:47
+#: data/core/units/monsters/Giant_Scorpling.cfg:32
+msgid "sting"
+msgstr "aguijón"
 
 #. [unit_type]: id=Dragonfly Naiad, race=monster
 #: data/core/units/monsters/Dragonfly_Naiad.cfg:5
@@ -6160,8 +6210,8 @@ msgstr ""
 #: data/core/units/monsters/Dragonfly_Naiad.cfg:58
 msgid ""
 "Young dragonflies live an aquatic life, mostly preying upon small fish or "
-"other insect nymphs.  They can crawl over rocks and mud, but they need to "
-"stay submerged to breath, which explains why the giant dragonflies are "
+"other insect nymphs. They can crawl over rocks and mud, but they need to "
+"stay submerged to breathe, which explains why the giant dragonflies are "
 "usually found only near rivers, lakes, and coves."
 msgstr ""
 
@@ -6188,9 +6238,9 @@ msgstr ""
 "que sus parientes más jóvenes, se rumorea que golpean con fuerza suficiente "
 "como para arrancar la cabeza de un enemigo."
 
-#. [attack]: type=pierce
 #. [attack]: type=blade
-#: data/core/units/monsters/Elder_Falcon.cfg:27
+#. [attack]: type=pierce
+#: data/core/units/monsters/Elder_Falcon.cfg:50
 #: data/core/units/monsters/Falcon.cfg:93 data/core/units/monsters/Roc.cfg:29
 msgid "beak"
 msgstr "pico"
@@ -6212,30 +6262,6 @@ msgstr ""
 "preciosas normalmente usadas por deporte. Las mismas técnicas son empleadas "
 "para desgarrar y rasgar a los enemigos en la batalla, y su gran velocidad es "
 "una bendición para explorar la tierra."
-
-#. [unit_type]: id=Fire Ant, race=monster
-#: data/core/units/monsters/Fire_Ant.cfg:11
-msgid "Fire Ant"
-msgstr "Hormiga de fuego"
-
-#. [unit_type]: id=Fire Ant, race=monster
-#: data/core/units/monsters/Fire_Ant.cfg:46
-msgid ""
-"Small but deadly in large numbers, fire ants possess fierce fangs and an "
-"unusual ability to generate fire. Though these creatures typically function "
-"as scavengers, a burrow of fire ants can become aggressive when provoked and "
-"have even been known to attack small groups of threatening troops."
-msgstr ""
-"Pequeñas pero mortales en números grandes, las hormigas de fuego poseen "
-"colmillos feroces y una habilidad inusual para generar fuego. Aunque estas "
-"criaturas suelen ser carroñeras, una madriguera de hormigas de fuego puede "
-"volverse agresiva cuando se la provoca e incluso se sabe que ataca a grupos "
-"pequeños de tropas amenazantes."
-
-#. [attack]: type=fire
-#: data/core/units/monsters/Fire_Ant.cfg:73
-msgid "fire"
-msgstr "fuego"
 
 #. [unit_type]: id=Fire Dragon, race=monster
 #: data/core/units/monsters/Fire_Dragon.cfg:4
@@ -6402,12 +6428,6 @@ msgstr ""
 "Un escorpión normal ya es bastante peligroso; no hace falta explicar cuan "
 "peligroso es uno del tamaño de un hombre."
 
-#. [attack]: type=pierce
-#: data/core/units/monsters/Giant_Scorpion.cfg:47
-#: data/core/units/monsters/Giant_Scorpling.cfg:32
-msgid "sting"
-msgstr "aguijón"
-
 #. [attack]: type=impact
 #. [attack]: type=blade
 #: data/core/units/monsters/Giant_Scorpion.cfg:59
@@ -6424,12 +6444,16 @@ msgstr "rastrero"
 
 # Parece que es otro escorpión
 #. [variation]
+#. [unit_type]: id=Sand Scuttler
 #: data/core/units/monsters/Giant_Scorpion.cfg:112
+#: data/core/units/monsters/Sand_Scuttler.cfg:8
 msgid "Sand Scuttler"
 msgstr "Alacrán de la arena"
 
 #. [variation]
-#: data/core/units/monsters/Giant_Scorpion.cfg:118
+#. [unit_type]: id=Sand Scuttler
+#: data/core/units/monsters/Giant_Scorpion.cfg:119
+#: data/core/units/monsters/Sand_Scuttler.cfg:13
 msgid ""
 "Making their homes in sandy dunes, these critters are an odd mix of mundane "
 "creature and elemental beast. Though usually timid, Sand Scuttlers sometimes "
@@ -6500,12 +6524,6 @@ msgstr "Caballo de la bahía"
 
 #. [unit_type]: id=Bay Horse, race=horse
 #: data/core/units/monsters/Horse.cfg:19
-#, fuzzy
-#| msgid ""
-#| "Bay horses are defined more by their coloration than their size or "
-#| "temperment, and can be found anywhere from the battlefield to the farm to "
-#| "the wild plains and woodlands. Though an unencumbered horse will tend to "
-#| "flee if possible, they will fight back with a powerful kick when cornered."
 msgid ""
 "Bay horses are defined more by their coloration than their size or "
 "temperament, and can be found anywhere from the battlefield to the farm to "
@@ -6578,10 +6596,8 @@ msgstr ""
 
 #. [male]
 #: data/core/units/monsters/Horse_Dark.cfg:88
-#, fuzzy
-#| msgid "female^Dark Horse"
 msgid "male^Dark Horse"
-msgstr "Yegua oscura"
+msgstr "Caballo oscuro"
 
 #. [female]
 #: data/core/units/monsters/Horse_Dark.cfg:92
@@ -6704,21 +6720,15 @@ msgstr ""
 
 #. [unit_type]: id=Kraken, race=monster
 #: data/core/units/monsters/Kraken.cfg:21
-#, fuzzy
-#| msgid ""
-#| "Cuttlefish are gigantic creatures of the seas. They can grab their "
-#| "opponents with strong tentacles, or spit a poisonous black ink from a "
-#| "distance. The best way to survive an encounter with these monsters is to "
-#| "remain ashore."
 msgid ""
 "Krakens are gigantic creatures of the seas. They can grab their opponents "
 "with strong tentacles, or spit a poisonous black ink from a distance. The "
 "best way to survive an encounter with these monsters is to remain ashore."
 msgstr ""
-"Las sepias gigantes son enormes criaturas marinas. Pueden agarrar a sus "
-"enemigos con sus fuertes tentáculos o escupir una venenosa tinta negra a "
-"distancia. La mejor forma de sobrevivir a un encuentro con estos monstruos "
-"es permanecer en tierra."
+"Los krakens son gigantescas criaturas marinas. Pueden agarrar a sus enemigos "
+"con sus fuertes tentáculos o escupir una venenosa tinta negra a distancia. "
+"La mejor forma de sobrevivir a un encuentro con estos monstruos es "
+"permanecer en tierra."
 
 #. [unit_type]: id=Mudcrawler, race=monster
 #: data/core/units/monsters/Mudcrawler.cfg:4
@@ -7126,14 +7136,6 @@ msgstr "Alto guardián naga"
 
 #. [unit_type]: id=Naga High Guard, race=naga
 #: data/core/units/nagas/Guard_High.cfg:23
-#, fuzzy
-#| msgid ""
-#| "The elite naga guards are a rigid barrier to any invaders of a naga "
-#| "stronghold. They have powerful stikes and, like the lesser Shield Guard, "
-#| "they are difficult to dislodge from their posts because of effective use "
-#| "of a shield in melee techniques. This tactic does nothing against ranged "
-#| "attacks, but the nagas can usually seek better terrain advantage in such "
-#| "situations."
 msgid ""
 "The elite naga guards are a rigid barrier to any invaders of a naga "
 "stronghold. They have powerful strikes and, like the lesser Shield Guard, "
@@ -7910,10 +7912,8 @@ msgstr ""
 
 #. [unit_type]: id=Saurian Javelineer, race=lizard
 #: data/core/units/saurians/Javelineer.cfg:4
-#, fuzzy
-#| msgid "female^Saurian Flanker"
 msgid "female^Saurian Javelineer"
-msgstr "Flanqueadora sauria"
+msgstr "Jabalinera sauria"
 
 #. [unit_type]: id=Saurian Javelineer, race=lizard
 #: data/core/units/saurians/Javelineer.cfg:19
@@ -7991,10 +7991,8 @@ msgstr ""
 
 #. [unit_type]: id=Saurian Spearthrower, race=lizard
 #: data/core/units/saurians/Spearthrower.cfg:4
-#, fuzzy
-#| msgid "female^Saurian Skirmisher"
 msgid "female^Saurian Spearthrower"
-msgstr "Hostigadora sauria"
+msgstr "Lancera sauria"
 
 #. [unit_type]: id=Saurian Spearthrower, race=lizard
 #: data/core/units/saurians/Spearthrower.cfg:18
@@ -8570,10 +8568,8 @@ msgstr ""
 # Caballero no parece correcto para un goblin en un lobo. En un caballo aún, aunque no sea un personaje muy caballeresco.
 #. [unit_type]: id=Bone Knight, race=undead
 #: data/core/units/undead/Skele_Bone_Knight.cfg:5
-#, fuzzy
-#| msgid "Goblin Knight"
 msgid "Bone Knight"
-msgstr "Lobero goblin"
+msgstr "Lobero esqueleto"
 
 #. [unit_type]: id=Bone Knight, race=undead
 #: data/core/units/undead/Skele_Bone_Knight.cfg:27
@@ -8615,7 +8611,7 @@ msgstr ""
 #. [unit_type]: id=Chocobone, race=undead
 #: data/core/units/undead/Skele_Chocobone.cfg:4
 msgid "Chocobone"
-msgstr "Esqueleto chocobo"
+msgstr "Chocobo esqueleto"
 
 #. [unit_type]: id=Chocobone, race=undead
 #: data/core/units/undead/Skele_Chocobone.cfg:30
@@ -8747,7 +8743,7 @@ msgstr ""
 #. [unit_type]: id=Skeleton Archer, race=undead
 #: data/core/units/undead/Skeleton_Archer.cfg:4
 msgid "Skeleton Archer"
-msgstr "Esqueleto arquero"
+msgstr "Arquero esqueleto"
 
 #. [unit_type]: id=Skeleton Archer, race=undead
 #: data/core/units/undead/Skeleton_Archer.cfg:16
@@ -8766,10 +8762,8 @@ msgstr ""
 
 #. [unit_type]: id=Skeleton Rider, race=undead
 #: data/core/units/undead/Skeleton_Rider.cfg:5
-#, fuzzy
-#| msgid "Skeleton Archer"
 msgid "Skeleton Rider"
-msgstr "Esqueleto arquero"
+msgstr "Jinete esqueleto"
 
 #. [unit_type]: id=Skeleton Rider, race=undead
 #: data/core/units/undead/Skeleton_Rider.cfg:33
