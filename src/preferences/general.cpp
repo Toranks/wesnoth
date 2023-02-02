@@ -379,16 +379,6 @@ void set_partial_color(const std::string& color_id) {
 	prefs["partial_orb_color"] = color_id;
 }
 
-std::string disengaged_color() {
-	std::string disengaged_color = get("disengaged_orb_color");
-	if (disengaged_color.empty())
-		return game_config::colors::disengaged_orb_color;
-	return fix_orb_color_name(disengaged_color);
-}
-void set_disengaged_color(const std::string& color_id) {
-	prefs["disengaged_orb_color"] = color_id;
-}
-
 bool scroll_to_action()
 {
 	return get("scroll_to_action", true);
@@ -1024,6 +1014,42 @@ sort_order::type addon_manager_saved_order_direction()
 void set_addon_manager_saved_order_direction(sort_order::type value)
 {
 	set("addon_manager_saved_order_direction", sort_order::get_string(value));
+}
+
+bool achievement(const std::string& content_for, const std::string& id)
+{
+	for(config& ach : prefs.child_range("achievements"))
+	{
+		if(ach["content_for"].str() == content_for)
+		{
+			std::vector<std::string> ids = utils::split(ach["ids"]);
+			return std::find(ids.begin(), ids.end(), id) != ids.end();
+		}
+	}
+	return false;
+}
+
+void set_achievement(const std::string& content_for, const std::string& id)
+{
+	for(config& ach : prefs.child_range("achievements"))
+	{
+		// if achievements already exist for this content and the achievement has not already been set, add it
+		if(ach["content_for"].str() == content_for)
+		{
+			std::vector<std::string> ids = utils::split(ach["ids"]);
+			if(std::find(ids.begin(), ids.end(), id) == ids.end())
+			{
+				ach["ids"] = ach["ids"].str() + "," + id;
+			}
+			return;
+		}
+	}
+
+	// else no achievements have been set for this content yet
+	config ach;
+	ach["content_for"] = content_for;
+	ach["ids"] = id;
+	prefs.add_child("achievements", ach);
 }
 
 

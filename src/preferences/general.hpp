@@ -185,9 +185,6 @@ namespace preferences {
 	std::string moved_color();
 	void set_moved_color(const std::string& color_id);
 
-	std::string disengaged_color();
-	void set_disengaged_color(const std::string& color_id);
-
 	bool show_ally_orb();
 	void set_show_ally_orb(bool show_orb);
 
@@ -276,5 +273,8 @@ namespace preferences {
 
 	sort_order::type addon_manager_saved_order_direction();
 	void set_addon_manager_saved_order_direction(sort_order::type value);
+
+	bool achievement(const std::string& content_for, const std::string& id);
+	void set_achievement(const std::string& content_for, const std::string& id);
 
 } // end namespace preferences

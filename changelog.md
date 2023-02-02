@@ -8,10 +8,12 @@
  ### Packaging
  ### Terrain
  ### Translations
-   * Updated translations: British English, Finnish, Spanish
+   * Updated translations: British English, Chinese (Simplified), Finnish, French, Portuguese (Brazil), Spanish
  ### Units
+   * Add Merman Brawler and Citizen to core
  ### User interface
  ### WML Engine
+   * Added basic achievements functionality.
  ### Miscellaneous and Bug Fixes
 
 ## Version 1.17.12
