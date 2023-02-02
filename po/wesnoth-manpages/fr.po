@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wesnoth_Manpages-1.16\n"
-"POT-Creation-Date: 2023-01-14 18:20-0600\n"
+"POT-Creation-Date: 2022-09-18 23:11-0500\n"
 "PO-Revision-Date: 2022-11-24 10:27+0800\n"
 "Last-Translator: demario\n"
 "Language-Team: French <wesnothfr@lists.tuxfamily.org>\n"
@@ -571,16 +571,15 @@ msgstr ""
 # type: TP
 #. type: TP
 #: doc/man/wesnoth.6:192
-#, fuzzy, no-wrap
-#| msgid "B<--log-to-file>"
-msgid "B<--no-log-to-file>"
+#, no-wrap
+msgid "B<--log-to-file>"
 msgstr "B<--log-to-file>"
 
 #. type: Plain text
 #: doc/man/wesnoth.6:195
 msgid ""
-"prevents redirecting logged output to a file. Log files are created in the "
-"logs directory under the userdata folder."
+"redirects logged output to a file. Log files are created in the logs "
+"directory under the userdata folder."
 msgstr ""
 
 # type: TP

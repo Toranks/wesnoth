@@ -16,21 +16,20 @@
 # Alvin Eloy Luna Castro <alvineloy@gmail.com>, 2011.
 # Aelonin <quianaaelonin@gmail.com>, 2011, 2012.
 # Pepe <donpepe1963@gmail.com>, 2014.
-# Toranks <toranksmervat@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Wesnoth 1.14\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-01-14 18:20-0600\n"
-"PO-Revision-Date: 2023-01-15 10:18+0100\n"
-"Last-Translator: Toranks <toranksmervat@gmail.com>\n"
+"POT-Creation-Date: 2022-12-17 19:09-0600\n"
+"PO-Revision-Date: 2021-09-24 14:09+0200\n"
+"Last-Translator: Pepe <donpepe1963@gmail.com>\n"
 "Language-Team: Wesnoth Spanish translation\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 2.3\n"
 
 #. [multiplayer_side]: id=Custom
 #: data/_main.cfg:22
@@ -221,7 +220,7 @@ msgstr ""
 #. [advanced_preference]: type=int
 #: data/advanced_preferences.cfg:156
 msgid "Font size scale (experimental)"
-msgstr "Escala de tamaño de fuente (experimental)"
+msgstr ""
 
 #. [advanced_preference]: type=int
 #: data/advanced_preferences.cfg:157
@@ -229,12 +228,11 @@ msgid ""
 "Scales all text up or down from the standard size for your resolution. "
 "Warning: Scaling text up may cause issues in the in-game sidebar."
 msgstr ""
-"Escala todo el texto más o menos del tamaño estándar para la resolución "
-"activa. Advertencia: escalar el texto puede causar problemas en la barra "
-"lateral del juego."
 
 #. [advanced_preference]: type=int
 #: data/advanced_preferences.cfg:167
+#, fuzzy
+#| msgid "Connection timed out"
 msgid "Server disconnect timeout"
 msgstr "Tiempo excedido en la conexión"
 
@@ -245,9 +243,6 @@ msgid ""
 "logged into the multiplayer server, you must log out and then log back in "
 "for this to take effect."
 msgstr ""
-"La cantidad de tiempo en segundos antes de que se detecte una desconexión. "
-"Si ya inició sesión en el servidor multijugador, debe cerrar la sesión y "
-"luego volver a iniciarla para que esto surta efecto."
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [unstore_unit]
@@ -712,12 +707,12 @@ msgstr "Hacha"
 #. [item]: id=axe-small
 #: data/core/editor/items.cfg:82
 msgid "Small Axe"
-msgstr "Hacha pequeña"
+msgstr ""
 
 #. [item]: id=axe-throwing
 #: data/core/editor/items.cfg:89
 msgid "Throwing Axe"
-msgstr "Hacha arrojadiza"
+msgstr ""
 
 #. [item]: id=ball-blue
 #: data/core/editor/items.cfg:96
@@ -791,12 +786,12 @@ msgstr "Caja"
 #. [item]: id=branch
 #: data/core/editor/items.cfg:229
 msgid "Branch"
-msgstr "Rama"
+msgstr ""
 
 #. [item]: id=branch-bare
 #: data/core/editor/items.cfg:236
 msgid "Bare Branch"
-msgstr "Rama exfoliada"
+msgstr ""
 
 #. [item]: id=brazier
 #: data/core/editor/items.cfg:243
@@ -805,8 +800,10 @@ msgstr "Brasero"
 
 #. [item]: id=brazier-lit1
 #: data/core/editor/items.cfg:251
+#, fuzzy
+#| msgid "Brazier"
 msgid "Lit Brazier"
-msgstr "Brasero apagado"
+msgstr "Brasero"
 
 #. [item]: id=buckler
 #. [item]: id=buckler2
@@ -826,14 +823,18 @@ msgstr "Jaula"
 
 #. [item]: id=chest
 #: data/core/editor/items.cfg:286
+#, fuzzy
+#| msgid "Closed Plain Chest"
 msgid "Closed Chest"
-msgstr "Cofre cerrado"
+msgstr "Cofre sencillo cerrado"
 
 #. [item]: id=chest-open
 #. Open is an adjective here, not a verb. That is, a (treasure) chest that is open, not an action to open such a chest.
 #: data/core/editor/items.cfg:294
+#, fuzzy
+#| msgid "Open Plain Chest"
 msgid "Open Chest"
-msgstr "Cofre abierto"
+msgstr "Cofre sencillo abierto"
 
 #. [item]: id=chest-plain-closed
 #: data/core/editor/items.cfg:301
@@ -853,7 +854,7 @@ msgstr "Capa verde"
 #. [item]: id=club
 #: data/core/editor/items.cfg:322
 msgid "Club"
-msgstr "Garrote"
+msgstr ""
 
 #. [item]: id=coffin-closed
 #: data/core/editor/items.cfg:329
@@ -863,28 +864,32 @@ msgstr "Ataúd cerrado"
 #. [item]: id=coffin-open
 #. Open is an adjective here, not a verb. That is, a coffin that is open, not an action to open a coffin.
 #: data/core/editor/items.cfg:337
+#, fuzzy
+#| msgid "Closed Coffin"
 msgid "Open Coffin"
-msgstr "Ataúd abierto"
+msgstr "Ataúd cerrado"
 
 #. [item]: id=crossbow
 #: data/core/editor/items.cfg:344
 msgid "Crossbow"
-msgstr "Ballesta"
+msgstr ""
 
 #. [item]: id=dagger
 #: data/core/editor/items.cfg:351
 msgid "Dagger"
-msgstr "Daga"
+msgstr ""
 
 #. [item]: id=dagger-poison
 #: data/core/editor/items.cfg:358
+#, fuzzy
+#| msgid "Poison"
 msgid "Poison Dagger"
-msgstr "Daga envenenada"
+msgstr "Veneno"
 
 #. [item]: id=dagger-poison-bare
 #: data/core/editor/items.cfg:365
 msgid "Poison Dagger (clean)"
-msgstr "Daga envenenada (limpia)"
+msgstr ""
 
 #. [item]: id=dragonstatue
 #: data/core/editor/items.cfg:372
@@ -898,8 +903,10 @@ msgstr "Espada ardiente"
 
 #. [item]: id=flame-sword-bare
 #: data/core/editor/items.cfg:386
+#, fuzzy
+#| msgid "Flaming Sword"
 msgid "Unenchanted Flaming Sword"
-msgstr "Espada flameante desencantada"
+msgstr "Espada ardiente"
 
 #. [item]: id=flower1
 #. [item]: id=flower2
@@ -937,8 +944,10 @@ msgstr "Gavilla de grano"
 
 #. [item]: id=hammer
 #: data/core/editor/items.cfg:455
+#, fuzzy
+#| msgid "Runic Hammer"
 msgid "Hammer"
-msgstr "Martillo"
+msgstr "Martillo rúnico"
 
 #. [item]: id=hammer-runic
 #: data/core/editor/items.cfg:462
@@ -959,8 +968,10 @@ msgstr "Llave"
 
 #. [item]: id=key-dark
 #: data/core/editor/items.cfg:490
+#, fuzzy
+#| msgid "Dark Red"
 msgid "Dark Key"
-msgstr "Llave oscura"
+msgstr "Rojo oscuro"
 
 #. [item]: id=leather-pack
 #: data/core/editor/items.cfg:497
@@ -970,19 +981,23 @@ msgstr "Bolsa de cuero"
 #. [item]: id=mace
 #: data/core/editor/items.cfg:504
 msgid "Mace"
-msgstr "Maza"
+msgstr ""
 
 # Egyptian hieroglyphic character that read (life). ankh o anj. Ver wikipedia.
 #. [item]: id=necklace-bone
 #: data/core/editor/items.cfg:511
+#, fuzzy
+#| msgid "Ankh Necklace"
 msgid "Bone Necklace"
-msgstr "Collar de hueso"
+msgstr "Anj"
 
 # Egyptian hieroglyphic character that read (life). ankh o anj. Ver wikipedia.
 #. [item]: id=necklace-stone
 #: data/core/editor/items.cfg:518
+#, fuzzy
+#| msgid "Ankh Necklace"
 msgid "Stone Necklace"
-msgstr "Collar de piedra"
+msgstr "Anj"
 
 #. [item]: id=orcish-flag
 #: data/core/editor/items.cfg:525
@@ -1075,12 +1090,14 @@ msgstr "Cetro de fuego"
 #. [item]: id=sling
 #: data/core/editor/items.cfg:644
 msgid "Sling"
-msgstr "Honda"
+msgstr ""
 
 #. [item]: id=spear
 #: data/core/editor/items.cfg:651
+#, fuzzy
+#| msgid "Speak"
 msgid "Spear"
-msgstr "Lanza"
+msgstr "Hablar"
 
 #. [item]: id=spear-fancy
 #. [item]: id=spear-fancy2
@@ -1091,7 +1108,7 @@ msgstr "Lanza ornamental"
 #. [item]: id=spear-javelin
 #: data/core/editor/items.cfg:672
 msgid "Javelin"
-msgstr "Jabalina"
+msgstr ""
 
 #. [item]: id=staff
 #. [item]: id=staff2
@@ -1101,8 +1118,10 @@ msgstr "Báculo"
 
 #. [item]: id=staff-druid
 #: data/core/editor/items.cfg:693
+#, fuzzy
+#| msgid "Magic Staff"
 msgid "Druid Staff"
-msgstr "Bastón de Druida"
+msgstr "Báculo mágico"
 
 #. [item]: id=staff-magic
 #. [item]: id=staff-magic2
@@ -1112,13 +1131,17 @@ msgstr "Báculo mágico"
 
 #. [item]: id=staff-magic-wand
 #: data/core/editor/items.cfg:714
+#, fuzzy
+#| msgid "Magic Staff"
 msgid "Magic Wand"
-msgstr "Varita mágica"
+msgstr "Báculo mágico"
 
 #. [item]: id=staff-plain
 #: data/core/editor/items.cfg:721
+#, fuzzy
+#| msgid "Magic Staff"
 msgid "Plain Staff"
-msgstr "Bastón simple"
+msgstr "Báculo mágico"
 
 #. [item]: id=stone-tablet
 #: data/core/editor/items.cfg:728
@@ -1147,48 +1170,58 @@ msgstr "Espada"
 
 #. [item]: id=sword-holy
 #: data/core/editor/items.cfg:777
+#, fuzzy
+#| msgid "Sword"
 msgid "Holy Sword"
-msgstr "Espada sagrada"
+msgstr "Espada"
 
 #. [item]: id=sword-short
 #: data/core/editor/items.cfg:784
+#, fuzzy
+#| msgid "Sword"
 msgid "Short Sword"
-msgstr "Espada corta"
+msgstr "Espada"
 
 #. [item]: id=sword-wraith
 #: data/core/editor/items.cfg:791
+#, fuzzy
+#| msgid "Flaming Sword"
 msgid "Wraith Sword"
-msgstr "Espada espectral"
+msgstr "Espada ardiente"
 
 #. [item]: id=talisman-ankh
 #: data/core/editor/items.cfg:798
 msgid "Ankh Talisman"
-msgstr "Talismán Anj"
+msgstr ""
 
 #. [item]: id=talisman-bone
 #: data/core/editor/items.cfg:805
 msgid "Bone Talisman"
-msgstr "Talismán de hueso"
+msgstr ""
 
 #. [item]: id=talisman-stone
 #: data/core/editor/items.cfg:812
+#, fuzzy
+#| msgid "Stone Tablet"
 msgid "Stone Talisman"
-msgstr "Talismán de piedra"
+msgstr "Tabla de piedra"
 
 #. [item]: id=thunderstick
 #: data/core/editor/items.cfg:819
 msgid "Thunderstick"
-msgstr "Atronadora"
+msgstr ""
 
 #. [item]: id=torch
 #: data/core/editor/items.cfg:826
 msgid "Lit Torch"
-msgstr "Antorcha encendida"
+msgstr ""
 
 #. [item]: id=torch-bare
 #: data/core/editor/items.cfg:833
+#, fuzzy
+#| msgid "Unit Tool"
 msgid "Unlit Torch"
-msgstr "Antorcha apagada"
+msgstr "Herramienta de unidades"
 
 # Pepe: paisaje, vista, decorados?
 #. [item_group]: id=scenery
@@ -1381,8 +1414,10 @@ msgstr "Templo"
 #. [item]: id=temple-cracked3
 #: data/core/editor/items.cfg:1209 data/core/editor/items.cfg:1216
 #: data/core/editor/items.cfg:1223
+#, fuzzy
+#| msgid "Ruined Tent"
 msgid "Ruined Temple"
-msgstr "Templo en ruinas"
+msgstr "Restos de tienda"
 
 #. [item]: id=tent-fancy-red
 #: data/core/editor/items.cfg:1230
@@ -3803,7 +3838,7 @@ msgstr "Inaccesible"
 #. [color_range]: id=impassable
 #: data/core/team-colors.cfg:225
 msgid "Impassable"
-msgstr "Impenetrable"
+msgstr "Intransitable"
 
 #. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=fog
@@ -4392,30 +4427,6 @@ msgstr "Cancelar"
 #: data/modifications/pick_advance/dialog.lua:174
 msgid "No planned advancement"
 msgstr "Promoción sin planificar"
-
-#. [test]: id={ID}
-#: data/test/macros/shroud.cfg:12
-msgid "Unit Test "
-msgstr "Prueba de unidad"
-
-#. [side]: type=Elvish Archer, id=alice
-#. [leader]: type=Elvish Archer, id=alice
-#: data/test/macros/shroud.cfg:24
-#: data/test/scenarios/manual_tests/test_relative_dir.cfg:41
-msgid "Alice"
-msgstr "Alice"
-
-#. [side]: type=Orcish Grunt, id=bob
-#. [leader]: type=Orcish Grunt, id=bob
-#: data/test/macros/shroud.cfg:35
-#: data/test/scenarios/manual_tests/test_relative_dir.cfg:52
-msgid "Bob"
-msgstr "Bob"
-
-#. [test]: id=test_relative_dir
-#: data/test/scenarios/manual_tests/test_relative_dir.cfg:27
-msgid "Unit Test test_relative_dir"
-msgstr "Prueba de Unidad test_relative_dir"
 
 #. [action]: id=button-playreplay, type=image
 #: data/themes/_initial.cfg:412
@@ -5434,15 +5445,13 @@ msgid ""
 "the underworld hinders the flightless, while offering illumination in "
 "darkness to those that may fly above it."
 msgstr ""
-"Las aguas purificadoras de un oasis sanarán a los heridos. El profundo "
-"abismo del inframundo obstaculiza a los que no pueden volar, al tiempo que "
-"ofrece iluminación en la oscuridad a aquellos que pueden volar por encima de "
-"ella."
 
 #. [tip]
 #: data/tips.cfg:258
+#, fuzzy
+#| msgid "<i>― King Konrad, 536YW</i>"
 msgid "<i>― Dominant Gorlack, 3YW</i>"
-msgstr "<i>― Dominante Gorlack, 3YW</i>"
+msgstr "<i>― Rey Konrad, 536 AñW</i>"
 
 #. [tip]
 #: data/tips.cfg:261
@@ -5665,8 +5674,6 @@ msgid ""
 "The connection to the remote server is not secure. The add-on "
 "<i>$addon_title</i> cannot be uploaded."
 msgstr ""
-"La conexión con el servidor remoto no es segura. El complemento "
-"<i>$addon_title</i> no se puede cargar."
 
 #: src/addon/client.cpp:224
 msgid "Requesting file index..."
@@ -5682,23 +5689,25 @@ msgstr ""
 msgid "Sending add-on <i>$addon_title</i>..."
 msgstr "Enviando el complemento <i>$addon_title</i>..."
 
-#: src/addon/client.cpp:309
+#: src/addon/client.cpp:307
 msgid "Removing add-on <i>$addon_title</i> from the server..."
 msgstr "Borrando el complemento <i>$addon_title</i> del servidor..."
 
-#: src/addon/client.cpp:337
+#: src/addon/client.cpp:336
 msgid "Downloading add-on <i>$addon_title</i>..."
 msgstr "Descargando el complemento <i>$addon_title</i>..."
 
-#: src/addon/client.cpp:349 src/addon/client.cpp:710
+#: src/addon/client.cpp:348 src/addon/client.cpp:709
 msgid "Add-ons Manager"
 msgstr "Gestor de complementos"
 
-#: src/addon/client.cpp:349
+#: src/addon/client.cpp:348
+#, fuzzy
+#| msgid "Sending add-on <i>$addon_title</i>..."
 msgid "Installing add-on <i>$addon_title</i>..."
-msgstr "Instalando el complemento <i>$addon_title</i>..."
+msgstr "Enviando el complemento <i>$addon_title</i>..."
 
-#: src/addon/client.cpp:361 src/addon/client.cpp:387
+#: src/addon/client.cpp:360 src/addon/client.cpp:386
 msgid ""
 "The add-on <i>$addon_title</i> has an invalid file or directory name and "
 "cannot be installed."
@@ -5706,7 +5715,7 @@ msgstr ""
 "El complemento <i>$addon_title</i> tiene un nombre de archivo o directorio "
 "no válido y no se ha podido instalar."
 
-#: src/addon/client.cpp:366 src/addon/client.cpp:392
+#: src/addon/client.cpp:365 src/addon/client.cpp:391
 msgid ""
 "The add-on <i>$addon_title</i> has file or directory names with case "
 "conflicts. This may cause problems."
@@ -5714,11 +5723,11 @@ msgstr ""
 "El complemento <i>$addon_title</i> tiene un nombre de archivo o directorio "
 "con letras mayúsculas conflictivas. Esto puede ocasionar algunos problemas."
 
-#: src/addon/client.cpp:425
+#: src/addon/client.cpp:424
 msgid "The server responded with an error:"
 msgstr "El servidor devolvió un error:"
 
-#: src/addon/client.cpp:480
+#: src/addon/client.cpp:479
 msgid ""
 "The selected add-on has the following dependency, which is not currently "
 "installed or available from the server. Do you wish to continue?"
@@ -5732,11 +5741,11 @@ msgstr[1] ""
 "El complemento seleccionado depende de los siguientes archivos, los cuales "
 "no están instalados o disponibles desde el servidor. ¿Desea continuar?"
 
-#: src/addon/client.cpp:489
+#: src/addon/client.cpp:488
 msgid "Broken Dependencies"
 msgstr "Dependencias de archivo rotas"
 
-#: src/addon/client.cpp:529
+#: src/addon/client.cpp:528
 msgid ""
 "The following dependency could not be installed. Do you still wish to "
 "continue?"
@@ -5747,11 +5756,11 @@ msgstr[0] "La siguiente dependencia podría no instalarse. ¿Desea continuar?"
 msgstr[1] ""
 "Las siguientes dependencias podrían no instalarse. ¿Desea continuar?"
 
-#: src/addon/client.cpp:533
+#: src/addon/client.cpp:532
 msgid "Dependencies Installation Failed"
 msgstr "Algunas dependencias de la instalación han fallado"
 
-#: src/addon/client.cpp:556
+#: src/addon/client.cpp:555
 msgid ""
 "The add-on '$addon|' is already installed and contains additional "
 "information that will be permanently lost if you continue:"
@@ -5759,19 +5768,19 @@ msgstr ""
 "El complemento '$addon|' ya está instalado y contiene información adicional "
 "que se perderá permanentemente si usted continua:"
 
-#: src/addon/client.cpp:560
+#: src/addon/client.cpp:559
 msgid "Publishing information file (.pbl)"
 msgstr "Fichero con información de la publicación (.pbl)"
 
-#: src/addon/client.cpp:564
+#: src/addon/client.cpp:563
 msgid "Version control system (VCS) information"
 msgstr "Información del sistema de control de versión (VCS)"
 
-#: src/addon/client.cpp:568
+#: src/addon/client.cpp:567
 msgid "Do you really wish to continue?"
 msgstr "¿Desea continuar?"
 
-#: src/addon/client.cpp:570 src/addon/manager_ui.cpp:175
+#: src/addon/client.cpp:569 src/addon/manager_ui.cpp:175
 #: src/game_initialization/multiplayer.cpp:363
 msgid "Confirm"
 msgstr "Confirmar"
@@ -5916,6 +5925,9 @@ msgstr ""
 "Ocurrió un error al descargar la lista de complementos desde el servidor."
 
 #: src/addon/manager_ui.cpp:319
+#, fuzzy
+#| msgid ""
+#| "Could not find add-ons matching the ids $addon_ids on the add-on server."
 msgid ""
 "Could not find add-ons matching the ids $addon_ids on the add-on server."
 msgstr ""
@@ -5935,8 +5947,6 @@ msgid ""
 "Forum authentication was requested for a user that is not registered on the "
 "forums."
 msgstr ""
-"Se solicitó la autenticación del foro para un usuario que no está registrado "
-"en los foros."
 
 #: src/addon/validation.cpp:401
 msgid "Upload denied. Please contact the server administration for assistance."
@@ -6060,8 +6070,6 @@ msgid ""
 "The add-on's forum_auth attribute does not match what was previously "
 "uploaded."
 msgstr ""
-"El atributo forum_auth del complemento no coincide con lo que se cargó "
-"anteriormente."
 
 #: src/addon/validation.cpp:512
 msgid "Unspecified server error."
@@ -6082,7 +6090,7 @@ msgstr "La lista de versiones del complemento en el servidor está vacía."
 #: src/addon/validation.cpp:528
 msgid ""
 "This server does not support using the forum_auth attribute in your pbl."
-msgstr "Este servidor no admite el uso del atributo forum_auth en su pbl."
+msgstr ""
 
 #: src/addon/validation.cpp:538
 msgid "Unspecified validation failure."
@@ -6437,9 +6445,6 @@ msgid ""
 "to advance to ‘$higher_level’; please ask the add-on author to use "
 "[modify_unit_type] instead."
 msgstr ""
-"Error: [advancefrom] ya no funciona. Las unidades '$lower_level' no podrán "
-"avanzar a '$higher_level'; pídale al autor del complemento que use "
-"[modify_unit_type] en su lugar."
 
 #: src/game_config_manager.cpp:579
 msgid "instead, use the macro with the same name in the [campaign] tag"
@@ -6663,6 +6668,8 @@ msgid "Defeat enemy leader(s)"
 msgstr "Derrotar a los líderes enemigos"
 
 #: src/game_initialization/mp_game_utils.cpp:103
+#, fuzzy
+#| msgid "Cannot find era '$era'"
 msgid "Cannot find era '$era'"
 msgstr "No se puede encontrar la era '$era'"
 
@@ -7005,16 +7012,22 @@ msgid "No visible sides found."
 msgstr "No se ha encontrado ningún bando visible."
 
 #: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:173
+#, fuzzy
+#| msgid "Selected user: "
 msgid "Selected Game"
-msgstr "Juego Seleccionado"
+msgstr "Usuario seleccionado: "
 
 #: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:174
+#, fuzzy
+#| msgid "Game Lobby"
 msgid "Lobby"
 msgstr "Sala de entrada"
 
 #: src/gui/dialogs/multiplayer/lobby_player_list_helper.cpp:175
+#, fuzzy
+#| msgid "Other team"
 msgid "Other Games"
-msgstr "Otros juegos"
+msgstr "Otro equipo"
 
 #: src/gui/dialogs/multiplayer/match_history.cpp:32
 msgid "Match History — $player"
@@ -7159,6 +7172,10 @@ msgstr "Alineamiento: "
 #. TRANSLATORS: this is expected to say "[Dunefolk are] a group of units, all of whom are Humans",
 #. or "[Quenoth Elves are] a group of units, all of whom are Elves".
 #: src/help/help_impl.cpp:1072
+#, fuzzy
+#| msgid ""
+#| "This is a group of units, all of whom are <ref>dst='$topic_id' "
+#| "text='$help_taxonomy'</ref>"
 msgid ""
 "This is a group of units, all of whom are <ref>dst='$topic_id' "
 "text='$help_taxonomy'</ref>."
@@ -7263,12 +7280,16 @@ msgid "This command is currently unavailable."
 msgstr "Esta orden no está disponible actualmente."
 
 #: src/map_command_handler.hpp:225
+#, fuzzy
+#| msgid ""
+#| "Unknown command '$command', try $help_command for a list of available "
+#| "commands."
 msgid ""
 "Unknown command '$command', did you mean '$command_proposal'? try "
 "$help_command for a list of available commands."
 msgstr ""
-"Orden '$command' desconocida, ¿quizás quisiste decir '$command_proposal'? "
-"Ejecute $help_command para mostrar una lista de órdenes disponibles."
+"Orden «$command|» desconocida, ejecute $help_command para mostrar una lista "
+"de órdenes disponibles."
 
 #: src/map_command_handler.hpp:229
 msgid ""
@@ -7572,8 +7593,6 @@ msgid ""
 "Similar to the 'fps' command, but also forces everything to redraw instead "
 "of only things that have changed."
 msgstr ""
-"Similar al comando 'fps', pero también obliga a que todo se vuelva a dibujar "
-"en lugar de sólo las cosas que han cambiado."
 
 #: src/menu_events.cpp:1250
 msgid "Save game."
@@ -7893,8 +7912,6 @@ msgstr "Variable no encontrada"
 #: src/menu_events.cpp:1989
 msgid "Debug command 'unit: $unit' failed: no unit selected or hovered over."
 msgstr ""
-"El comando de depuración 'unit: $unidad' falló: no se seleccionó ninguna "
-"unidad ni se pasó el cursor sobre ella."
 
 # Es un elemento del WML. No se debe traducir  lawful, neutral, chaotic, o liminal.
 #: src/menu_events.cpp:2007
@@ -8495,17 +8512,19 @@ msgstr "Cuenta atrás hasta que su turno termine automáticamente."
 msgid "Turn Countdown"
 msgstr "Cuenta atrás de turno"
 
-# TRANSLATORS: Day of week + month + day of month + year + 12-hour time, eg 'Tue Nov 02 2021, 1:59 PM'. Format for your locale.
 #. TRANSLATORS: Day of week + month + day of month + year + 12-hour time, eg 'Tue Nov 02 2021, 1:59 PM'. Format for your locale.
 #: src/save_index.cpp:257
+#, fuzzy
+#| msgid "%a %b %d %I:%M %p %Y"
 msgid "%a %b %d %Y, %I:%M %p"
-msgstr "%a %d %b %I:%M %p %Y"
+msgstr "%a %b %d %I:%M %p %Y"
 
-# TRANSLATORS: Day of week + month + day of month + year + 24-hour time, eg 'Tue Nov 02 2021, 13:59'. Format for your locale.
 #. TRANSLATORS: Day of week + month + day of month + year + 24-hour time, eg 'Tue Nov 02 2021, 13:59'. Format for your locale.
 #: src/save_index.cpp:259
+#, fuzzy
+#| msgid "%a %b %d %H:%M %Y"
 msgid "%a %b %d %Y, %H:%M"
-msgstr "%a %d %b %H:%M %Y"
+msgstr "%a %b %d %H:%M %Y"
 
 #. TRANSLATORS: This string is used as part of a filename, as in, "HttT-The Elves Besieged replay.gz"
 #: src/save_index.cpp:279 src/savegame.cpp:588
@@ -10730,6 +10749,9 @@ msgstr "Opciones del modo pizarra"
 
 #~ msgid "unit list^Traits"
 #~ msgstr "Rasgos"
+
+#~ msgid "Unit List"
+#~ msgstr "Lista de unidades"
 
 #~ msgid "Scroll To"
 #~ msgstr "Desplazar a"

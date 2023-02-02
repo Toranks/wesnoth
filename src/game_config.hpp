@@ -103,7 +103,6 @@ namespace game_config
 	extern bool show_enemy_orb;
 	extern bool show_moved_orb;
 	extern bool show_partial_orb;
-	extern bool show_status_on_ally_orb;
 	extern bool show_unmoved_orb;
 
 	namespace images {

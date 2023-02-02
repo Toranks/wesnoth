@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.2\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-01-15 00:20 UTC\n"
+"POT-Creation-Date: 2022-12-18 01:09 UTC\n"
 "PO-Revision-Date: 2019-01-23 22:37+0100\n"
 "Last-Translator: aceman <acelists@atlas.sk>\n"
 "Language-Team: none\n"
@@ -1450,8 +1450,8 @@ msgstr "Vilhelm Viskitynnyri"
 #. [unit]: type=Woodsman
 #: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:231
 #: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:242
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:649
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:660
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:650
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:661
 msgid "Clockwork Boy"
 msgstr "Hodinár"
 
@@ -1476,47 +1476,47 @@ msgid "Sorrek, Chosen of Death"
 msgstr "Sorrek, Vyvolený Smrti"
 
 #. [unit]: type=Young Ogre
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:509
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:580
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:617
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:686
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:734
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:858
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:510
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:581
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:618
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:687
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:735
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:859
 msgid "Big Baby Dro"
 msgstr "Veľké dieťa Dro"
 
 #. [unit]: type=Drake Fighter
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:521
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:522
 msgid "Gawffus the Dim"
 msgstr "Gawffus Hlúpy"
 
 #. [unit]: type=Dwarvish Scout
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:569
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:570
 msgid "Rublok"
 msgstr "Rublok"
 
 #. [unit]: type=Dwarvish Scout
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:592
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:593
 msgid "Ulysses Mantyjuuri"
 msgstr "Ulysses Mantyjuuri"
 
 #. [unit]: type=Orcish Leader
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:708
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:709
 msgid "Neki the Brute"
 msgstr "Neki Surovec"
 
 #. [unit]: type=Elvish Fighter
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:746
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:747
 msgid "Claiomh Dubh"
 msgstr "Claiomh Dubh"
 
 #. [unit]: type=Soulless
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:804
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:805
 msgid "Tyxrrn the Dauntless"
 msgstr "Tyxrrn Smelý"
 
 #. [unit]: type=Skeleton
-#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:842
+#: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:843
 msgid "Rukhos, Chosen of Death"
 msgstr "Rukhos, Vyvolený Smrti"
 
@@ -2905,35 +2905,47 @@ msgid ""
 "graphics. Please be advised that it is not intended for playing."
 msgstr ""
 
-#~ msgid "Wesnoth Benchmark: AI"
-#~ msgstr "Test výkonu Wesnothu: umelá inteligencia"
+#. [multiplayer]: id=wesbench_ai
+#: data/multiplayer/scenarios/Wesbench_AI.cfg:9
+msgid "Wesnoth Benchmark: AI"
+msgstr "Test výkonu Wesnothu: umelá inteligencia"
 
-#~ msgid ""
-#~ "A wesnoth benchmark, use --nogui --no-delay --multiplayer --"
-#~ "scenario=wesbench_ai --exit-at-end."
-#~ msgstr ""
-#~ "Testovanie výkonu, použi --nogui --no-delay --multiplayer --"
-#~ "scenario=wesbench_ai --exit-at-end."
+#. [multiplayer]: id=wesbench_ai
+#: data/multiplayer/scenarios/Wesbench_AI.cfg:10
+msgid ""
+"A wesnoth benchmark, use --nogui --no-delay --multiplayer --"
+"scenario=wesbench_ai --exit-at-end."
+msgstr ""
+"Testovanie výkonu, použi --nogui --no-delay --multiplayer --"
+"scenario=wesbench_ai --exit-at-end."
 
-#~ msgid "Wesnoth Benchmark: Scrolling"
-#~ msgstr "Test výkonu Wesnothu: rolovanie obrazovky"
+#. [multiplayer]: id=wesbench_scroll
+#: data/multiplayer/scenarios/Wesbench_Scroll.cfg:9
+msgid "Wesnoth Benchmark: Scrolling"
+msgstr "Test výkonu Wesnothu: rolovanie obrazovky"
 
-#~ msgid ""
-#~ "A wesnoth benchmark, use --no-delay --multiplayer --"
-#~ "scenario=wesbench_scroll --exit-at-end."
-#~ msgstr ""
-#~ "Testovanie výkonu, použi --no-delay --multiplayer --"
-#~ "scenario=wesbench_scroll --exit-at-end."
+#. [multiplayer]: id=wesbench_scroll
+#: data/multiplayer/scenarios/Wesbench_Scroll.cfg:10
+msgid ""
+"A wesnoth benchmark, use --no-delay --multiplayer --scenario=wesbench_scroll "
+"--exit-at-end."
+msgstr ""
+"Testovanie výkonu, použi --no-delay --multiplayer --scenario=wesbench_scroll "
+"--exit-at-end."
 
-#~ msgid "Wesnoth Benchmark: Walking through Shroud"
-#~ msgstr "Test výkonu Wesnothu: odkrývanie mapy"
+#. [multiplayer]: id=wesbench_shroud_walk
+#: data/multiplayer/scenarios/Wesbench_Shroud_Walk.cfg:9
+msgid "Wesnoth Benchmark: Walking through Shroud"
+msgstr "Test výkonu Wesnothu: odkrývanie mapy"
 
-#~ msgid ""
-#~ "A wesnoth benchmark, use --no-delay --multiplayer --"
-#~ "scenario=wesbench_shroud_walk --exit-at-end."
-#~ msgstr ""
-#~ "Testovanie výkonu, použi --no-delay --multiplayer --"
-#~ "scenario=wesbench_shroud_walk --exit-at-end."
+#. [multiplayer]: id=wesbench_shroud_walk
+#: data/multiplayer/scenarios/Wesbench_Shroud_Walk.cfg:10
+msgid ""
+"A wesnoth benchmark, use --no-delay --multiplayer --"
+"scenario=wesbench_shroud_walk --exit-at-end."
+msgstr ""
+"Testovanie výkonu, použi --no-delay --multiplayer --"
+"scenario=wesbench_shroud_walk --exit-at-end."
 
 #~ msgid "Grand total: <b>%d</b>"
 #~ msgstr "Celkový súčet: <b>%d</b>"

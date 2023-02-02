@@ -1,19 +1,18 @@
 # Samu Voutilainen <smar@smar.fi>, 2010.
-# Jaakko Saarikko <jaakko.saarikko@protonmail.com>, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2022-11-20 05:31 UTC\n"
-"PO-Revision-Date: 2023-01-13 12:39+0200\n"
-"Last-Translator: Jaakko Saarikko <jaakko.saarikko@protonmail.com>\n"
+"PO-Revision-Date: 2010-03-22 23:02+0200\n"
+"Last-Translator: Mikko Nikkilä <miccoh@gmail.com>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Lokalize 1.0\n"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:11
@@ -32,13 +31,17 @@ msgstr "Soturi"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:20
+#, fuzzy
+#| msgid "(Normal)"
 msgid "Normal"
-msgstr "Normaali"
+msgstr "(normaali)"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:21
+#, fuzzy
+#| msgid "(Challenging)"
 msgid "Challenging"
-msgstr "Haastava"
+msgstr "(haastava)"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:21
@@ -47,8 +50,10 @@ msgstr "Rautapaita"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:22
+#, fuzzy
+#| msgid "(Difficult)"
 msgid "Difficult"
-msgstr "Vaikea"
+msgstr "(vaikea)"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:22
@@ -57,6 +62,7 @@ msgstr "Ylimys"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:25
+#, fuzzy
 msgid ""
 "<i>The mark of Wesnoth’s banner bold\n"
 "Comes not from its own land;\n"
@@ -68,20 +74,22 @@ msgid ""
 "Their tale I now relate...</i>\n"
 "\n"
 msgstr ""
-"<i>Uljaan Wesnothin vaakunan\n"
-"juuret muinaisuuteen kantaa\n"
-"kääpiöiden valtakunnan\n"
-"riimuseppien aikaan.\n"
-"Sen kerron ketkä luoneet on\n"
-"suuren tulivaltikan,\n"
-"laulan teille muistelon\n"
-"takojien tarinan.</i>\n"
+"Uljas vaakuna Wesnothin maan\n"
+"tullut ei omien miesten myötä,\n"
+"vaan on kääpiöiltä aikoinaan,\n"
+"se on riimuseppien työtä.\n"
+"Mistä on peräisin, kerronpa sen,\n"
+"siis tulinen valtikka juuri,\n"
+"sekä tarinan valtikan tekijöiden,\n"
+"nyt odottaa seikkailu suuri...\n"
 "\n"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:34
+#, fuzzy
+#| msgid "(Expert level, 9 scenarios.)"
 msgid "(Hard level, 10 scenarios.)"
-msgstr "(Asiantuntijatasoa, 10 skenaariota, 38 % suomennettu)"
+msgstr "(asiantuntijatasoa, 9 skenaariota)"
 
 #. [about]
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:39
@@ -105,6 +113,8 @@ msgstr "Taide ja graafinen suunnittelu"
 
 #. [editor_group]: id=sof
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:138
+#, fuzzy
+#| msgid "The Sceptre of Fire"
 msgid "Sceptre of Fire"
 msgstr "Tulivaltikka"
 
@@ -172,7 +182,7 @@ msgstr "Glildur"
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:65
 #: data/campaigns/Sceptre_of_Fire/scenarios/9_Caverns_of_Flame.cfg:44
 msgid "Elves"
-msgstr "Haltiat"
+msgstr ""
 
 #. [part]
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:190
@@ -205,7 +215,7 @@ msgstr ""
 "Ma kerron sulle, kuinka se tehtiin. Tarinan, syvältä kääpiöiden luolista. "
 "Tarinan kääpiöistä, jotka sen teki - Sill' totisesti, ne pojat mahtavia oli. "
 "Niin mahtavia, että he saivat paikkansa muinaisen Knalgan mahtavimpien "
-"sankareiden joukosta."
+"sankareiden joukosta. "
 
 #. [part]
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:197

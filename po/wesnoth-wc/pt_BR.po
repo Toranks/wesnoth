@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2022-11-20 05:31 UTC\n"
-"PO-Revision-Date: 2023-01-13 17:16-0300\n"
+"PO-Revision-Date: 2022-08-07 15:33-0300\n"
 "Last-Translator: Andrei Machado <andreisp.machado@yahoo.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 2.4.3\n"
 
 #. [era]: id=world_conquest_era
 #: data/campaigns/World_Conquest/_main.cfg:41
@@ -208,7 +208,7 @@ msgstr "A Irmandade"
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:45
 #: data/campaigns/World_Conquest/lua/game_mechanics/wocopedia/help.lua:234
 msgid "WoCopedia"
-msgstr "CoMpedia"
+msgstr "CoMupedia"
 
 #. [label]: id=title
 #. [lua]: gui.widget.add_invest_item
@@ -221,17 +221,21 @@ msgstr "Artefatos"
 #. [label]
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:396
 msgid "Recruits"
-msgstr "Recrutas"
+msgstr ""
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:463
+#, fuzzy
+#| msgid "Deserter"
 msgid "Deserters"
-msgstr "Desertores"
+msgstr "Desertor"
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:482
+#, fuzzy
+#| msgid "Commander"
 msgid "Commanders"
-msgstr "Comandantes"
+msgstr "Comandante"
 
 #. [label]
 #. [lua]: gui.widget.add_invest_item
@@ -242,8 +246,10 @@ msgstr "Heróis"
 
 #. [label]: id=title_random_leaders
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:520
+#, fuzzy
+#| msgid "Random"
 msgid "Random Leaders"
-msgstr "Líderes Aleatórios"
+msgstr "Aleatório"
 
 #. [label]: id=title
 #. [lua]: preshow
@@ -254,18 +260,20 @@ msgstr "Configurações"
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:588
+#, fuzzy
+#| msgid "World Conquest 1p"
 msgid "Use World Conquest Unitmarkers"
-msgstr "Usar marcadores de unidade de Conquistando o Mundo"
+msgstr "Conquistando o Mundo 1j"
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:608
 msgid "Use World Conquest experimental pickup"
-msgstr "Usar o sistema experimental de pegar coisas de Conquistando o Mundo"
+msgstr ""
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:628
 msgid "Show pickup confirmation"
-msgstr "Mostrar confirmação ao pegar algo"
+msgstr ""
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:648
@@ -274,8 +282,10 @@ msgstr "Dificuldade"
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/help_dialog.cfg:669
+#, fuzzy
+#| msgid "World Conquest"
 msgid "World Conquest version"
-msgstr "Versão do Conquistando o Mundo"
+msgstr "Conquistando o Mundo"
 
 #. [label]: id=title
 #: data/campaigns/World_Conquest/gui/invest_dialog.cfg:34
@@ -299,7 +309,7 @@ msgstr "Depois:"
 #. [button]: id=ok
 #: data/campaigns/World_Conquest/gui/invest_dialog.cfg:302
 msgid "Get This Item"
-msgstr "Pegar o Item"
+msgstr ""
 
 #. [button]: id=ok
 #: data/campaigns/World_Conquest/gui/invest_dialog.cfg:327
@@ -351,37 +361,43 @@ msgstr " mapa: "
 #. [label]
 #: data/campaigns/World_Conquest/gui/settings_dialog.cfg:112
 msgid "map size"
-msgstr "tamanho do mapa"
+msgstr ""
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/settings_dialog.cfg:128
 msgid "village density"
-msgstr "densidade de aldeias"
+msgstr ""
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/settings_dialog.cfg:144
 msgid "keep size"
-msgstr "tamanho da torre de menagem"
+msgstr ""
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/settings_dialog.cfg:160
+#, fuzzy
+#| msgid "Factions"
 msgid "iterations"
-msgstr "iterações"
+msgstr "Facções"
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/settings_dialog.cfg:176
+#, fuzzy
+#| msgid "terrain^water"
 msgid "terrain factor"
-msgstr "fator de terreno"
+msgstr "água"
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/settings_dialog.cfg:192
 msgid "island factor"
-msgstr "fator de ilha"
+msgstr ""
 
 #. [label]
 #: data/campaigns/World_Conquest/gui/settings_dialog.cfg:208
+#, fuzzy
+#| msgid "Tome of secrets"
 msgid "number of keeps"
-msgstr "Número de torres de menagem"
+msgstr "Tomo dos segredos"
 
 #: data/campaigns/World_Conquest/lua/campaign/enemy_themed.lua:5
 msgid "$name|'s pet"
@@ -4074,9 +4090,6 @@ msgstr ""
 msgid "Campaign Maintenance"
 msgstr ""
 
-#~ msgid "Use World Conquest PYA mod"
-#~ msgstr "Usar o mod PYA do Conquistando o Mundo"
-
 #~ msgid "Preset Advancement"
 #~ msgstr "Avanço Predeterminado"
 
@@ -4088,9 +4101,6 @@ msgstr ""
 #~ "No momento estou definido para avançar para: $name \n"
 #~ "\n"
 #~ "Quais são as suas ordens?"
-
-#~ msgid "Random"
-#~ msgstr "Aleatório"
 
 #~ msgid " and "
 #~ msgstr " e "
@@ -4118,9 +4128,6 @@ msgstr ""
 
 #~ msgid "full movement"
 #~ msgstr "movimento total"
-
-#~ msgid "terrain^water"
-#~ msgstr "água"
 
 #~ msgid "improved defenses"
 #~ msgstr "defesas aprimoradas"
