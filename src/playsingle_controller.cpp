@@ -176,6 +176,7 @@ void playsingle_controller::play_scenario_init(const config& level)
 	start_game();
 	skip_empty_sides(gamestate_->player_number_);
 
+	init_side_begin();
 	if(gamestate().in_phase(game_data::TURN_PLAYING)) {
 		init_side_end();
 	}
@@ -192,8 +193,10 @@ void playsingle_controller::play_scenario_init(const config& level)
 
 void playsingle_controller::skip_empty_sides(int& side_num)
 {
-	const int max = side_num + static_cast<int>(get_teams().size());
-	while (gamestate().board_.get_team(modulo(side_num, get_teams().size(), 1)).is_empty()) {
+	const int sides = static_cast<int>(get_teams().size());
+	if(sides == 0) return;
+	const int max = side_num + sides;
+	while (gamestate().board_.get_team(modulo(side_num, sides, 1)).is_empty()) {
 		if(side_num == max) {
 			throw game::game_error("No teams found");
 		}
