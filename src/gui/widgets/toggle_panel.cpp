@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2022
+	Copyright (C) 2008 - 2023
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -299,9 +299,9 @@ toggle_panel_definition::resolution::resolution(const config& cfg)
 	// Note the order should be the same as the enum state_t in toggle_panel.hpp.
 	for(const auto& c : cfg.child_range("state"))
 	{
-		state.emplace_back(c.optional_child("enabled"));
-		state.emplace_back(c.optional_child("disabled"));
-		state.emplace_back(c.optional_child("focused"));
+		state.emplace_back(VALIDATE_WML_CHILD(c, "enabled", _("Missing required state for toggle panel")));
+		state.emplace_back(VALIDATE_WML_CHILD(c, "disabled", _("Missing required state for toggle panel")));
+		state.emplace_back(VALIDATE_WML_CHILD(c, "focused", _("Missing required state for toggle panel")));
 	}
 }
 

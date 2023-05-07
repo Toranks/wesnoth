@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2006 - 2022
+	Copyright (C) 2006 - 2023
 	by Joerg Hinrichs <joerg.hinrichs@alice-dsl.de>
 	Copyright (C) 2003 by David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
@@ -58,7 +58,7 @@ playmp_controller::playmp_controller(const config& level, saved_game& state_of_g
 		skip_replay_ = false;
 	}
 
-	if(gui_->is_blindfolded() && gamestate().first_human_team_ != -1) {
+	if(gui_->is_blindfolded() && !is_observer()) {
 		blindfold_.unblind();
 	}
 }

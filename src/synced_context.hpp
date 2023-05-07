@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2014 - 2022
+	Copyright (C) 2014 - 2023
 	by David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -182,6 +182,8 @@ public:
 		virtual config request() const = 0;
 
 		virtual const char* name() const = 0;
+
+		int request_id() const;
 		void send_request() const;
 	};
 

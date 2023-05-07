@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2003 - 2022
+	Copyright (C) 2003 - 2023
 	by David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -34,7 +34,6 @@
 #include "play_controller.hpp"
 #include "synced_context.hpp"
 #include "resources.hpp"
-#include "statistics.hpp"
 #include "units/unit.hpp"
 #include "whiteboard/manager.hpp"
 #include "replay_recorder_base.hpp"

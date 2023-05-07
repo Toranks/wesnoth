@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2009 - 2022
+	Copyright (C) 2009 - 2023
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -67,13 +67,11 @@ scrollbar_panel_definition::resolution::resolution(const config& cfg)
 	: resolution_definition(cfg), grid()
 {
 	// The panel needs to know the order.
-	state.emplace_back(cfg.optional_child("background"));
-	state.emplace_back(cfg.optional_child("foreground"));
+	state.emplace_back(VALIDATE_WML_CHILD(cfg, "background", _("Missing required background for scrollbar panel")));
+	state.emplace_back(VALIDATE_WML_CHILD(cfg, "foreground", _("Missing required foreground for scrollbar panel")));
 
-	auto child = cfg.optional_child("grid");
-	VALIDATE(child, _("No grid defined."));
-
-	grid = std::make_shared<builder_grid>(*child);
+	auto child = VALIDATE_WML_CHILD(cfg, "grid", _("Missing required grid for scrollbar panel"));
+	grid = std::make_shared<builder_grid>(child);
 }
 
 // }---------- BUILDER -----------{

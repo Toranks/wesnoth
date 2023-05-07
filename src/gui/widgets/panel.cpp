@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2022
+	Copyright (C) 2008 - 2023
 	by Mark de Wever <koraq@xs4all.nl>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
@@ -108,8 +108,8 @@ panel_definition::resolution::resolution(const config& cfg)
 	, right_border(cfg["right_border"])
 {
 	// The panel needs to know the order.
-	state.emplace_back(cfg.optional_child("background"));
-	state.emplace_back(cfg.optional_child("foreground"));
+	state.emplace_back(VALIDATE_WML_CHILD(cfg, "background", _("Missing required background for panel definition")));
+	state.emplace_back(VALIDATE_WML_CHILD(cfg, "foreground", _("Missing required foreground for panel definition")));
 }
 
 // }---------- BUILDER -----------{

@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2006 - 2022
+	Copyright (C) 2006 - 2023
 	by Joerg Hinrichs <joerg.hinrichs@alice-dsl.de>
 	Copyright (C) 2003 by David White <dave@whitevine.net>
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
@@ -122,7 +122,8 @@ void playsingle_controller::init_gui()
 		gui_->scroll_to_tile(map_start_, game_display::WARP, false);
 		LOG_NG << "Found good stored ui location " << map_start_;
 	} else {
-		int scroll_team = gamestate().first_human_team_ + 1;
+
+		int scroll_team = find_viewing_side();
 		if(scroll_team == 0) {
 			scroll_team = 1;
 		}
@@ -151,6 +152,7 @@ void playsingle_controller::init_gui()
 void playsingle_controller::play_scenario_init(const config& level)
 {
 	gui_->labels().read(level);
+	update_viewing_player();
 
 	// Read sound sources
 	assert(soundsources_manager_ != nullptr);
@@ -175,7 +177,7 @@ void playsingle_controller::play_scenario_init(const config& level)
 
 	start_game();
 	skip_empty_sides(gamestate_->player_number_);
-
+	gamestate_->player_number_ = modulo(gamestate_->player_number_, static_cast<int>(get_teams().size()), 1);
 	init_side_begin();
 	if(gamestate().in_phase(game_data::TURN_PLAYING)) {
 		init_side_end();
@@ -307,12 +309,12 @@ void playsingle_controller::play_scenario_main_loop()
 				local_players[i] = get_teams()[i].is_local();
 			}
 
-			if(ex.start_replay) {
-				// MP "Back to turn"
-				statistics::read_stats(*ex.stats_);
+			if(ex.stats_) {
+				// "Back to turn"
+				get_saved_game().statistics().read(*ex.stats_);
 			} else {
-				// SP replay
-				statistics::reset_current_scenario();
+				// "Reset Replay To start"
+				get_saved_game().statistics().clear_current_scenario();
 			}
 
 			reset_gamestate(*ex.level, (*ex.level)["replay_pos"]);
@@ -778,8 +780,7 @@ void playsingle_controller::update_viewing_player()
 {
 	if(replay_controller_ && replay_controller_->is_controlling_view()) {
 		replay_controller_->update_viewing_player();
-	} else if(int side_num = play_controller::find_last_visible_team()) {
-		// Update viewing team in case it has changed during the loop.
+	} else if(int side_num = play_controller::find_viewing_side()) {
 		if(side_num != gui_->viewing_side()) {
 			update_gui_to_player(side_num - 1);
 		}
@@ -800,7 +801,7 @@ void playsingle_controller::enable_replay(bool is_unit_test)
 {
 	replay_controller_ = std::make_unique<replay_controller>(
 		*this,
- 		gamestate().has_human_sides(),
+		true,
 		std::make_shared<config>(saved_game_.get_replay_starting_point()),
 		std::bind(&playsingle_controller::on_replay_end, this, is_unit_test)
 	);

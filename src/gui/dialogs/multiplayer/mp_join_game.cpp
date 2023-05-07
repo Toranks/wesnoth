@@ -1,5 +1,5 @@
 /*
-	Copyright (C) 2008 - 2022
+	Copyright (C) 2008 - 2023
 	Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
 	This program is free software; you can redistribute it and/or modify
@@ -44,7 +44,6 @@
 #include "preferences/credentials.hpp"
 #include "saved_game.hpp"
 #include "side_controller.hpp"
-#include "statistics.hpp"
 #include "units/types.hpp"
 #include "utils/guard_value.hpp"
 #include "wesnothd_connection.hpp"
@@ -576,10 +575,6 @@ void mp_join_game::post_show(window& window)
 	}
 
 	if(window.get_retval() == retval::OK) {
-		if(auto stats = level_.optional_child("statistics")) {
-			statistics::fresh_stats();
-			statistics::read_stats(*stats);
-		}
 
 		mp::level_to_gamestate(level_, state_);
 
