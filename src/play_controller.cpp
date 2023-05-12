@@ -282,10 +282,6 @@ void play_controller::init(const config& level)
 		gamestate().set_game_display(gui_.get());
 		gui2::dialogs::loading_screen::progress(loading_stage::init_lua);
 
-		// This is required to disable "show_everything"
-		if(get_teams().size() != 0) {
-			gui_->set_team(0);
-		}
 		init_managers();
 		gui2::dialogs::loading_screen::progress(loading_stage::start_game);
 		// loadscreen_manager->reset();
@@ -1276,6 +1272,9 @@ std::set<std::string> play_controller::all_players() const
 void play_controller::play_side()
 {
 	do {
+		if(std::find_if(get_teams().begin(), get_teams().end(), [](const team& t) { return !t.is_empty(); }) == get_teams().end()){
+			throw game::game_error("The scenario has no (non-empty) sides defined");
+		}
 		update_viewing_player();
 
 		maybe_do_init_side();
