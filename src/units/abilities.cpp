@@ -890,7 +890,7 @@ std::string attack_type::weapon_specials() const
 static void add_name_list(std::string& temp_string, std::string& weapon_abilities, std::set<std::string>& checking_name, const std::string from_str)
 {
 	if(!temp_string.empty()){
-		temp_string = translation::dsgettext("wesnoth", from_str.c_str()) + temp_string;
+		temp_string = from_str.c_str() + temp_string;
 		weapon_abilities += (!weapon_abilities.empty() && !temp_string.empty()) ? "\n" : "";
 		weapon_abilities += temp_string;
 		temp_string.clear();
@@ -912,13 +912,13 @@ std::string attack_type::weapon_specials_value(const std::set<std::string> check
 	add_name_list(temp_string, weapon_abilities, checking_name, "");
 
 	weapon_specials_impl_self(temp_string, self_, shared_from_this(), other_attack_, self_loc_, AFFECT_SELF, checking_name, checking_tags, true);
-	add_name_list(temp_string, weapon_abilities, checking_name, "Owned: ");
+	add_name_list(temp_string, weapon_abilities, checking_name, _("Owned: "));
 
 	weapon_specials_impl_adj(temp_string, self_, shared_from_this(), other_attack_, self_loc_, AFFECT_SELF, checking_name, checking_tags, "affect_allies", true);
-	add_name_list(temp_string, weapon_abilities, checking_name, "Taught: ");
+	add_name_list(temp_string, weapon_abilities, checking_name, _("Taught: "));
 
 	weapon_specials_impl_adj(temp_string, self_, shared_from_this(), other_attack_, self_loc_, AFFECT_SELF, checking_name, checking_tags, "affect_enemies", true);
-	add_name_list(temp_string, weapon_abilities, checking_name, "Taught: (by an enemy): ");
+	add_name_list(temp_string, weapon_abilities, checking_name, _("Taught: (by an enemy): "));
 
 
 	if(other_attack_) {
@@ -931,7 +931,7 @@ std::string attack_type::weapon_specials_value(const std::set<std::string> check
 	}
 	weapon_specials_impl_self(temp_string, other_, other_attack_, shared_from_this(), other_loc_, AFFECT_OTHER, checking_name, checking_tags);
 	weapon_specials_impl_adj(temp_string, other_, other_attack_, shared_from_this(), other_loc_, AFFECT_OTHER, checking_name, checking_tags);
-	add_name_list(temp_string, weapon_abilities, checking_name, "Used by opponent: ");
+	add_name_list(temp_string, weapon_abilities, checking_name, _("Used by opponent: "));
 
 	return weapon_abilities;
 }
@@ -1259,11 +1259,11 @@ unit_ability_list attack_type::get_specials_and_abilities(const std::string& spe
 {
 	unit_ability_list abil_list = get_weapon_ability(special);
 	if(!abil_list.empty()){
-		abil_list = overwrite_special_checking(special, abil_list, abil_list, "filter_student", false);
+		abil_list = overwrite_special_checking(abil_list, abil_list, false);
 	}
 	unit_ability_list spe_list = get_specials(special);
 	if(!spe_list.empty()){
-		spe_list = overwrite_special_checking(special, spe_list, abil_list, "filter_self", true);
+		spe_list = overwrite_special_checking(spe_list, abil_list, true);
 		if(special == "plague" && !spe_list.empty()){
 			return spe_list;
 		}
@@ -1283,7 +1283,7 @@ static bool overwrite_special_affects(const config& special)
 	return (apply_to == "one_side" || apply_to == "both_sides");
 }
 
-unit_ability_list attack_type::overwrite_special_checking(const std::string& ability, unit_ability_list input, unit_ability_list overwriters, const std::string& filter_self, bool is_special) const
+unit_ability_list attack_type::overwrite_special_checking(unit_ability_list input, unit_ability_list overwriters, bool is_special) const
 {
 	for(unit_ability_list::iterator i = overwriters.begin(); i != overwriters.end();) {
 		if(!overwrite_special_affects(*i->ability_cfg)) {
@@ -1302,11 +1302,11 @@ unit_ability_list attack_type::overwrite_special_checking(const std::string& abi
 			bool is_overwritable = (is_special || !overwrite_special_affects(*j.ability_cfg));
 			bool one_side_overwritable = true;
 			if(affect_side && is_overwritable){
-				if(special_active_impl(shared_from_this(), other_attack_, *i.ability_cfg, AFFECT_SELF, ability, filter_self)){
-					one_side_overwritable = special_active_impl(shared_from_this(), other_attack_, *j.ability_cfg, AFFECT_SELF, ability, filter_self);
+				if(special_affects_self(*i.ability_cfg, is_attacker_)){
+					one_side_overwritable = special_affects_self(*j.ability_cfg, is_attacker_);
 				}
-				else if(special_active_impl(other_attack_, shared_from_this(), *i.ability_cfg, AFFECT_OTHER, ability, filter_self)){
-					one_side_overwritable = special_active_impl(other_attack_, shared_from_this(), *j.ability_cfg, AFFECT_OTHER, ability, filter_self);
+				else if(special_affects_opponent(*i.ability_cfg, !is_attacker_)){
+					one_side_overwritable = special_affects_opponent(*j.ability_cfg, !is_attacker_);
 				}
 			}
 			return (is_overwritable && one_side_overwritable);

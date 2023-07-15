@@ -89,6 +89,7 @@
 
 #include <boost/iostreams/filtering_stream.hpp> // for filtering_stream
 #include <boost/program_options/errors.hpp>     // for error
+#include <boost/algorithm/string/predicate.hpp> // for checking cmdline options
 #include <optional>
 
 #include <algorithm> // for transform
@@ -384,7 +385,7 @@ static int process_command_args(const commandline_options& cmdline_opts)
 	}
 
 	if(cmdline_opts.usercache_path) {
-		PLAIN_LOG << filesystem::get_cache_dir();
+		std::cout << filesystem::get_cache_dir();
 		return 0;
 	}
 
@@ -393,7 +394,7 @@ static int process_command_args(const commandline_options& cmdline_opts)
 	}
 
 	if(cmdline_opts.userconfig_path) {
-		PLAIN_LOG << filesystem::get_user_config_dir();
+		std::cout << filesystem::get_user_config_dir();
 		return 0;
 	}
 
@@ -402,7 +403,7 @@ static int process_command_args(const commandline_options& cmdline_opts)
 	}
 
 	if(cmdline_opts.userdata_path) {
-		PLAIN_LOG << filesystem::get_user_data_dir();
+		std::cout << filesystem::get_user_data_dir();
 		return 0;
 	}
 
@@ -434,7 +435,7 @@ static int process_command_args(const commandline_options& cmdline_opts)
 	}
 
 	if(cmdline_opts.data_path) {
-		PLAIN_LOG << game_config::path;
+		std::cout << game_config::path;
 		return 0;
 	}
 
@@ -1021,13 +1022,6 @@ static std::string autodetect_game_data_dir(std::string exe_dir)
 	return auto_dir;
 }
 
-#ifndef _WIN32
-static void wesnoth_terminate_handler(int)
-{
-	exit(0);
-}
-#endif
-
 #ifdef _WIN32
 #define error_exit(res)                                                                                                \
 	do {                                                                                                               \
@@ -1060,6 +1054,8 @@ int main(int argc, char** argv)
 	// if false, output will be written to the terminal
 	// on windows, if wesnoth was not started from a console, then it will allocate one
 	bool write_to_log_file = true;
+	[[maybe_unused]]
+	bool no_con = false;
 
 	// --nobanner needs to be detected before the main command-line parsing happens
 	// --log-to needs to be detected so the logging output location is set before any actual logging happens
@@ -1110,6 +1106,10 @@ int main(int argc, char** argv)
 		} else if(arg == "--log-to-file") {
 			write_to_log_file = true;
 		}
+
+		if(arg == "--wnoconsole") {
+			no_con = true;
+		}
 	}
 
 	// setup logging to file
@@ -1118,26 +1118,19 @@ int main(int argc, char** argv)
 		lg::set_log_to_file();
 	} else {
 #ifdef _WIN32
-		lg::do_console_redirect();
+		if(!no_con) {
+			lg::do_console_redirect();
+		}
 #endif
 	}
 
+	SDL_SetHint(SDL_HINT_NO_SIGNAL_HANDLERS, "1");
 	// Is there a reason not to just use SDL_INIT_EVERYTHING?
 	if(SDL_Init(SDL_INIT_TIMER) < 0) {
 		PLAIN_LOG << "Couldn't initialize SDL: " << SDL_GetError();
 		return (1);
 	}
 	atexit(SDL_Quit);
-
-#ifndef _WIN32
-	struct sigaction terminate_handler;
-	terminate_handler.sa_handler = wesnoth_terminate_handler;
-	terminate_handler.sa_flags = 0;
-
-	sigemptyset(&terminate_handler.sa_mask);
-	sigaction(SIGTERM, &terminate_handler, nullptr);
-	sigaction(SIGINT, &terminate_handler, nullptr);
-#endif
 
 	// Mac's touchpad generates touch events too.
 	// Ignore them until Macs have a touchscreen: https://forums.libsdl.org/viewtopic.php?p=45758
@@ -1165,6 +1158,18 @@ int main(int argc, char** argv)
 					PLAIN_LOG << "Automatically found a possible data directory at: " << auto_dir;
 				}
 				game_config::path = std::move(auto_dir);
+			} else if(game_config::path.empty()) {
+				bool data_dir_specified = false;
+				for(int i=0;i<argc;i++) {
+					if(std::string(argv[i]) == "--data-dir" || boost::algorithm::starts_with(argv[i], "--data-dir=")) {
+						data_dir_specified = true;
+						break;
+					}
+				}
+				if (!data_dir_specified) {
+					PLAIN_LOG << "Cannot find a data directory. Specify one with --data-dir";
+					return 1;
+				}
 			}
 		}
 

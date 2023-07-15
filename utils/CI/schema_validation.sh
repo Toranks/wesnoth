@@ -1,5 +1,9 @@
 #!/bin/bash
 
+shopt -s globstar nullglob
+
+# bash sets TERM to dumb by default but does not export it
+compgen -e -X '!TERM' || export TERM=xterm # hopefully a good approximation of what github supports
 reset=$(tput sgr0)
 red=$(tput setaf 1)
 green=$(tput setaf 2)
@@ -34,7 +38,7 @@ validate() {
 validate_core() { validate "$1" ./wesnoth --validate data/_main.cfg; }
 validate_misc() { validate "$1" ./wesnoth --data-dir=. --validate=data/_main.cfg --preprocess-defines="$2"; }
 validate_achievements() { validate "Achievements" ./wesnoth --data-dir=. --validate=data/achievements.cfg --use-schema=data/schema/achievements.cfg; }
-validate_dialog() { validate "$1 dialog $(basename $2 .cfg)" ./wesnoth --data-dir=. --validate=$2 --use-schema=data/schema/gui_window.cfg; }
+validate_dialog() { validate "$1 dialog $(basename "$2" .cfg)" ./wesnoth --data-dir=. --validate="$2" --use-schema=data/schema/gui_window.cfg; }
 validate_schema() { validate "schema $1" ./wesnoth --data-dir=. --validate-schema=data/schema/"$2".cfg; }
 
 validate_campaign() {
@@ -66,9 +70,9 @@ validate_campaign() {
         error "$name validation complete!  Success: No"
         echo "------"
     fi
-    
-    for gui in $(find data/campaigns/$name -path "*/gui/*.cfg"); do
-        validate_dialog $name $gui || success=No
+
+    for gui in data/campaigns/"$name"/**/gui/*.cfg; do
+        validate_dialog "$name" "$gui" || success=No
     done
 
     [ "$success" = "Yes" ]
@@ -89,10 +93,10 @@ validate_schema "Languages"    "languages"    || RET=1
 validate_core "Core" || RET=1
 
 validate_achievements || RET=1
-for gui in $(find data/modifications -path "*/gui/*.cfg"); do
+for gui in data/modifications/**/gui/*.cfg; do
     name=${gui#"data/modifications/"}
     name=${name%%/*}
-    validate_dialog "modification $name" $gui || RET=1
+    validate_dialog "modification $name" "$gui" || RET=1
 done
 
 validate "Fonts" ./wesnoth --validate=data/hardwired/fonts.cfg --use-schema=data/schema/fonts.cfg

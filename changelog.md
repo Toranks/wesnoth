@@ -1,18 +1,68 @@
-## Version 1.17.16+dev
+## Version 1.17.18+dev
  ### Add-ons client
  ### Add-ons server
  ### Campaigns
+   * Liberty
+     * S4: Resolved nameless enemies gaining names at day-break (#7748).
  ### Editor
  ### Multiplayer
  ### Lua API
  ### Packaging
  ### Terrain
  ### Translations
-   * Updated translations: Arabic, British English, Czech, French, Italian, Spanish
+   * Updated translations: British English, Czech, Finnish, French, Portuguese (Brazil)
  ### Units
  ### User interface
  ### WML Engine
  ### Miscellaneous and Bug Fixes
+
+## Version 1.17.18
+ ### Campaigns
+   * Heir to the Throne
+     * S19c and S20b: Improve rewards by giving a Lieutenant instead of a Sergeant.
+   * Northern Rebirth
+     * Large grammar correction to the English text. (PRs #7643, #7663, #7676, #7680, #7682, #7683)
+   * UtBS
+     * Make the name of the dark assassin translatable again. (PR #7696)
+     * Added po hints (translation hints).
+   * World Conquest
+     * Fixed a bug that the epic trait raised XP requirements for advancements that cost less than 60 XP.
+ ### Multiplayer
+   * Add some search terms to the match history dialog. (PR #7571)
+ ### Terrain
+   * Added ruined walls terrain variations: Xur (damaged Xu); Xor (damaged Xos); and Exos (ruined Xos, is Flat/Cave alias). (PR #7629)
+ ### Translations
+   * Updated translations: British English, Czech, Finnish, French, Spanish
+   * Python files are now searched for translatable strings.
+   * Added the `wesnoth-tools` textdomain for WML-maintenance tools.
+ ### User interface
+   * Fix file dialogs (e.g. Save As dialog in the Map Editor) not listing /run/media/USER
+     as a possible file location on modern Linux distributions.
+   * Update the preferences window’s Display resolution list if the game window is resized.
+   * Better error handling if the data directory is not found. (issue #6883)
+   * The Log File button is now available in the game version info dialog on non-Windows platforms.
+   * Rearranged some elements in Display preferences.
+ ### Miscellaneous and Bug Fixes
+   * Move multiplayer macros to proper folder. (PR #7647)
+   * Fixed updating POT files with version 0.68-1 of the po4a toolsuite. (issue #7149)
+   * On platforms where logging used to go to stdout/stderr by default, it’s now copied there even when logging to a file. (PR #7672)
+   * `GUI.pyw` now has the i18n mechanics to be translatable, but please wait until the English has been revised.
+   * Refactored hotkey handling, so it no longer has two different codepaths for WML menu items.
+   * The old `utils/change_textdomain` script has been removed. (PR #7688)
+   * wmlxgettext now supports extracting all textdomains at once. (PR #7624)
+   * Fixed a crash in the autocorrect handling on the Wesnoth console. (issue #7412)
+
+## Version 1.17.17
+ ### Translations
+   * Updated translations: Arabic, British English, Czech, French, German, Italian, Spanish
+ ### User interface
+   * Fixed main menu Language button and Version label not being refreshed after
+     switching languages without relaunching the game (issue #7437).
+   * Fixed changing game resolution in Preferences not refreshing the user interface
+     as expected (issue #7436).
+ ### WML Engine
+   * Add support for distinct sub-achievements.
+   * Add [filter_ability] usable instead of [abilities][tag name] to filter attributes including the type of ability used.
 
 ## Version 1.17.16
  ### Translations
@@ -138,10 +188,10 @@
  ### Campaigns
    * Sceptre of Fire
      * S9: Update for terrain codes introduced in 1.17.9 (issue #7210)
-   * Heir to the Throne: 
+   * Heir to the Throne:
      * S05B: Delurin now has traits Loyal + resilient + intelligent
    * Liberty:
-     * The non-loyal character Delurin now has traits resilient + intelligent 
+     * The non-loyal character Delurin now has traits resilient + intelligent
  ### Translations
    * Updated translations: Arabic, British English, Finnish, French
  ### Units

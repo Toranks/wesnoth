@@ -8,22 +8,41 @@ on:
   workflow_dispatch:
 
 jobs:
-  ubuntu-2004:
+  checks: # checks that don't need a wesnoth binary
+    runs-on: ubuntu-latest
+    container:
+      image: wesnoth/wesnoth:2204-master
+      options: --tty # docker create options
+      env:
+        CLICOLOR_FORCE: 1
+
+    steps:
+      - { uses: actions/checkout@v3, with: { submodules: "recursive" } }
+
+      - name: Check for invalid characters
+        run: |
+          ./utils/CI/check_utf8.sh
+          ./utils/CI/utf8_bom_dog.sh
+      - name: Whitespace and WML indentation check
+        if: success() || failure()
+        run: |
+          git config --global --add safe.directory '*'
+          ./utils/CI/fix_whitespace.sh; git status; [ "$(git status --short | wc -l)" = 0 ]
+      - name: Run luacheck
+        if: success() || failure()
+        run: luacheck .
+      - name: Doxygen check
+        if: success() || failure()
+        run: doxygen Doxyfile
+
+  ubuntu:
     strategy:
       fail-fast: false
       matrix:
         include:
-          - tool: scons
-            cc: gcc
-            cxx: g++
-            cfg: release
-            lto: true
-          - tool: cmake
-            cc: clang
-            cxx: clang++
-            cfg: debug
-            lto: false
-    runs-on: ubuntu-20.04
+          - { tool: scons, cc: gcc,   cxx: g++,     cfg: release, lto: true  }
+          - { tool: cmake, cc: clang, cxx: clang++, cfg: debug,   lto: false }
+    runs-on: ubuntu-latest
     container:
       image: wesnoth/wesnoth:2204-master
       options: --tty # docker create options
@@ -51,49 +70,46 @@ jobs:
         run: |
           case $TOOL in
             scons)
-              scons wesnoth boost_unit_tests \
-                build="$CFG" ctool="$CC" cxxtool="$CXX" cxx_std="$CXX_STD" \
-                extra_flags_config="-pipe" strict=true forum_user_handler=true \
-                nls=false enable_lto="$LTO" force_color=true jobs=2 --debug=time
-              
+              build() {
+                scons "$@" build="$CFG" ctool="$CC" cxxtool="$CXX" cxx_std="$CXX_STD" \
+                  extra_flags_config="-pipe" strict=true forum_user_handler=true \
+                  nls=false enable_lto="$LTO" force_color=true jobs=2 --debug=time
+              }
+              build wesnoth boost_unit_tests
+
               apt remove -y -qq libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev
 
-              scons wesnothd campaignd \
-                build="$CFG" ctool="$CC" cxxtool="$CXX" cxx_std="$CXX_STD" \
-                extra_flags_config="-pipe" strict=true forum_user_handler=true \
-                nls=false enable_lto="$LTO" force_color=true jobs=2 --debug=time
+              build wesnothd campaignd
               ;;
             cmake)
-              cmake -DENABLE_GAME=true -DENABLE_SERVER=false -DENABLE_CAMPAIGN_SERVER=false \
-                -DENABLE_TESTS=true -DCMAKE_BUILD_TYPE="$CFG" -DCXX_STD="$CXX_STD" \
-                -DEXTRA_FLAGS_CONFIG="-pipe" -DENABLE_STRICT_COMPILATION=true -DENABLE_MYSQL=true \
-                -DENABLE_NLS=false -DFORCE_COLOR_OUTPUT=true -DENABLE_LTO="$LTO" -DLTO_JOBS=2 .
+              build() {
+                cmake "$@" -DCMAKE_BUILD_TYPE="$CFG" -DCXX_STD="$CXX_STD" \
+                  -DEXTRA_FLAGS_CONFIG="-pipe" -DENABLE_STRICT_COMPILATION=true -DENABLE_MYSQL=true \
+                  -DENABLE_NLS=false -DENABLE_LTO="$LTO" -DFORCE_COLOR_OUTPUT=true -DLTO_JOBS=2 .
+              }
+              build -DENABLE_GAME=true -DENABLE_SERVER=false -DENABLE_CAMPAIGN_SERVER=false -DENABLE_TESTS=true
               make conftests
               make VERBOSE=1 -j2
 
               apt remove -y -qq libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev
 
-              cmake -DENABLE_GAME=false -DENABLE_SERVER=true -DENABLE_CAMPAIGN_SERVER=true \
-                -DENABLE_TESTS=false -DCMAKE_BUILD_TYPE="$CFG" -DCXX_STD="$CXX_STD" \
-                -DEXTRA_FLAGS_CONFIG="-pipe" -DENABLE_STRICT_COMPILATION=true -DENABLE_MYSQL=true \
-                -DENABLE_NLS=false -DFORCE_COLOR_OUTPUT=true -DENABLE_LTO="$LTO" -DLTO_JOBS=2 .
+              build -DENABLE_GAME=false -DENABLE_SERVER=true -DENABLE_CAMPAIGN_SERVER=true -DENABLE_TESTS=false
               make VERBOSE=1 -j2
               ;;
           esac
       - name: Start Xvfb
         if: steps.build.outcome == 'success'
         run: start-stop-daemon --start --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1024x768x24
-      - name: Whitespace and WML indentation check
-        if: success() || failure()
+      - name: Check path options
+        if: steps.build.outcome == 'success'
         run: |
-          git config --global --add safe.directory '*'
-          ./utils/CI/fix_whitespace.sh; git status; (( $(git status --short | wc -l) == 0 ))
-      - name: Run luacheck
-        if: success() || failure()
-        run: luacheck .
-      - name: Doxygen check
-        if: success() || failure()
-        run: ./utils/CI/doxygen-check.sh
+          ./wesnoth --version
+          for opt in config data userconfig userdata
+          do
+            output=$(./wesnoth --nobanner --"$opt"-path)
+            if [ "$output" = "" ]; then printf 'option --%s-path prints nothing to stdout!' "$opt" >&2; exit 1; fi
+            printf '%s-path: %s\n' "$opt" "$output"
+          done
       - name: WML validation
         if: steps.build.outcome == 'success'
         run: ./utils/CI/schema_validation.sh
@@ -111,69 +127,50 @@ jobs:
         run: ./run_boost_tests
 
   steam-runtime:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: "recursive"
+      - { uses: actions/checkout@v3, with: { submodules: "recursive" } }
 
       - name: Steam Runtime
         run: |
-          export BRANCH=master
-          export IMAGE=steamrt
-          export NLS=false
-          export TOOL=scons
-          export CC=gcc-9
-          export CXX=g++-9
-          export CXX_STD=17
-          export CFG=release
-          export LTO=false
-          export CLICOLOR_FORCE=1
-          ./.github/workflows/ci-scripts/ubuntu.sh
+          version=$(sed -n 's/#define VERSION "\(.*\)"/\1/p' src/wesconfig.h)
+          cd utils/dockerbuilds && ./make_steam_build
+          tar -cf "steambuild-$version.tar" steambuild
 
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
           name: Steam-Linux
-          path: |
-            ~/steambuild-*.tar
+          path: utils/dockerbuilds/steambuild-*.tar
 
   mingw:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: "recursive"
+      - { uses: actions/checkout@v3, with: { submodules: "recursive" } }
 
       - name: MinGW Crosscompile
         run: |
-          export BRANCH=master
-          export IMAGE=mingw
-          export NLS=false
-          export TOOL=scons
-          export CC=gcc
-          export CXX=g++
-          export CXX_STD=17
-          export CFG=release
-          export LTO=false
-          export CLICOLOR_FORCE=1
-          ./.github/workflows/ci-scripts/ubuntu.sh
+          version=$(sed -n 's/#define VERSION "\(.*\)"/\1/p' src/wesconfig.h)
+          git archive --format=tar HEAD > "wesnoth-$version.tar"
+          tar -rf "wesnoth-$version.tar" src/modules/
+          bzip2 "wesnoth-$version.tar"
 
-      - name: Upload 1
+          cd utils/dockerbuilds && ./make_mingw_build
+          mv mingwbuild/wesnoth*-win64.exe "wesnoth-$version-win64.exe"
+
+      - name: Upload Source
         uses: actions/upload-artifact@v3
         with:
           name: Source
-          path: |
-            ~/wesnoth-*.tar.bz2
+          path: wesnoth-*.tar.bz2
 
-      - name: Upload 2
+      - name: Upload Windows-Installer
         uses: actions/upload-artifact@v3
         with:
           name: Windows-Installer
-          path: |
-            ~/wesnoth-*-win64.exe
+          path: utils/dockerbuilds/wesnoth-*-win64.exe
 
   flatpak:
     runs-on: ubuntu-latest
@@ -215,11 +212,6 @@ jobs:
         with:
           submodules: "recursive"
 
-      - name: Check for invalid characters
-        run: |
-          ./utils/CI/check_utf8.sh
-          ./utils/CI/utf8_bom_dog.sh
-
       - name: Translations
         run: |
           cmake -DENABLE_NLS=true -DENABLE_GAME=false -DENABLE_SERVER=false -DENABLE_CAMPAIGN_SERVER=false -DENABLE_TESTS=false -DENABLE_POT_UPDATE_TARGET=TRUE .
@@ -238,12 +230,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - os: macos-11.0
-            cfg: Debug
-          - os: macos-11.0
-            cfg: Release
-    runs-on: ${{ matrix.os }}
+        cfg: [ Debug, Release ]
+    runs-on: macos-11.0
     env:
       CFG: ${{ matrix.cfg }}
 
@@ -272,11 +260,11 @@ jobs:
 
 # run after all other jobs have completed to check overall build status
   discord-notification:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     name: Discord Notification
 
-    needs: [ubuntu-2004, steam-runtime, mingw, flatpak, translations, macos-intel]
+    needs: [checks, ubuntu, steam-runtime, mingw, flatpak, translations, macos-intel]
     if: always()
 
     steps:

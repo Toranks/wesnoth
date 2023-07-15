@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2023-04-23 03:24 UTC\n"
-"PO-Revision-Date: 2023-05-11 21:44+0200\n"
+"POT-Creation-Date: 2023-05-21 03:01 UTC\n"
+"PO-Revision-Date: 2023-06-15 21:31+0200\n"
 "Last-Translator: Michal Žejdl <lachim@emer.cz>\n"
 "Language-Team: Czech https://wiki.wesnoth.org/CzechTranslation\n"
 "Language: cs\n"
@@ -338,7 +338,7 @@ msgstr ""
 #: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:49
 #: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:65
 #: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:43
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:94
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:97
 msgid "Defenders"
 msgstr "Obránci"
 
@@ -406,11 +406,11 @@ msgstr "Skřeti dosáhnou okraje Parthynu"
 #: data/campaigns/Descent_Into_Darkness/scenarios/06_Return_to_Parthyn.cfg:819
 #: data/campaigns/Descent_Into_Darkness/scenarios/07a_A_Small_Favor.cfg:431
 #: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:129
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:925
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:208
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1070
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1138
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1185
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:929
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:211
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1077
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1145
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1192
 #: data/campaigns/Descent_Into_Darkness/scenarios/08_Alone_at_Last.cfg:174
 #: data/campaigns/Descent_Into_Darkness/scenarios/08_Alone_at_Last.cfg:900
 #: data/campaigns/Descent_Into_Darkness/scenarios/09_Descent_into_Darkness.cfg:203
@@ -657,6 +657,7 @@ msgstr ""
 "podporovat."
 
 #. [message]: race=human
+#. Hint, that the loyal units stay behind
 #: data/campaigns/Descent_Into_Darkness/scenarios/01_Saving_Parthyn.cfg:554
 msgid ""
 "We should all be glad to see you gone, necromancer. I detest having fought "
@@ -756,6 +757,7 @@ msgstr ""
 "Pokud se pustíš do pátrání po zkaženosti, nikdo z nás tě nebude podporovat."
 
 #. [message]: race=human
+#. Hint, that the loyal units stay behind
 #: data/campaigns/Descent_Into_Darkness/scenarios/01_Saving_Parthyn.cfg:625
 msgid "Better to die than to ally ourselves with a necromancer."
 msgstr "Raději zemřít, než se spolčovat s nekromantem."
@@ -865,11 +867,11 @@ msgstr "Obsaď všechny gobliní vesnice"
 #: data/campaigns/Descent_Into_Darkness/scenarios/05_Schism.cfg:211
 #: data/campaigns/Descent_Into_Darkness/scenarios/07a_A_Small_Favor.cfg:435
 #: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:133
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:929
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:212
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1074
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1142
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1189
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:933
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:215
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1081
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1149
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1196
 msgid "Death of Darken Volk"
 msgstr "Darken Volk zemře"
 
@@ -1485,6 +1487,7 @@ msgstr ""
 
 # Hm, vtípek?
 #. [message]: speaker=Malin Keshar
+#. Malin Keshar breaks the fourth wall here and addresses the player, whom the 'you' refers to.
 #: data/campaigns/Descent_Into_Darkness/scenarios/03_A_Haunting_in_Winter.cfg:1239
 msgid ""
 "You. You there behind the screen. You are the one controlling me. Why are "
@@ -2979,7 +2982,7 @@ msgstr ""
 #: data/campaigns/Descent_Into_Darkness/scenarios/07a_A_Small_Favor.cfg:122
 #: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:30
 #: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:24
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:62
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:65
 msgid "Intruders"
 msgstr "Vetřelci"
 
@@ -3207,13 +3210,23 @@ msgid "Lady Karae"
 msgstr "Lady Kara"
 
 #. [command]
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:261
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:340
+#. Unit name
+#. Unit name
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:263
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:345
 msgid "Guard"
 msgstr "Stráž"
 
+#. [command]
+#. Unit name
+#. Unit name
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:265
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:347
+msgid "female^Guard"
+msgstr "Stráž"
+
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:415
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:419
 msgid ""
 "Malin and Darken Volk enter the mage lady’s manor, closing the heavy gates "
 "behind them."
@@ -3222,22 +3235,22 @@ msgstr ""
 "bránu."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:420
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:424
 msgid "That gate will not hold back the soldiers for long. We must hurry."
 msgstr "Brána nezadrží vojáky nadlouho. Musíme spěchat."
 
 #. [message]: speaker=unit
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:435
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:439
 msgid "Undead have entered the manor! Defend yourselves!"
 msgstr "Do sídla vstoupili nemrtví! Braňte se!"
 
 #. [message]
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:635
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:639
 msgid "Hunt down the undead! Destroy them all!"
 msgstr "Dopadněte nemrtvé! Všechny je zničte!"
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:639
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:643
 msgid ""
 "The city guard has entered the manor. We will have to hold them off while we "
 "search."
@@ -3245,32 +3258,32 @@ msgstr ""
 "Do sídla vstoupila městská stráž. Musíme je pozdržet, zatímco budeme pátrat."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:653
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:657
 msgid "More guards are coming. We must hasten our search!"
 msgstr "Přichází další stráže. Musíme uspíšit naše pátrání!"
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:667
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:671
 msgid "It does not look like we have much time left..."
 msgstr "Nevypadá to, že máme moc času..."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:682
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:686
 msgid "There is only one thing that makes a dream impossible to achieve."
 msgstr "Existuje jen jedna věc, která brání dosáhnout snu."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:695
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:699
 msgid "... the fear of failure."
 msgstr "... strach ze selhání."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:706
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:710
 msgid "<i>There is nothing good or bad, but thinking makes it so.</i>"
 msgstr "<i>Nic není dobré nebo špatné, takové to dělá až přemýšlení.</i>"
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:717
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:721
 msgid ""
 "<i>Mirrors of shallow blue, cold and opaque, they stare,\n"
 "Piercing, unblinking, a pitiless reflection,\n"
@@ -3281,7 +3294,7 @@ msgstr ""
 "drtí naši křehkou představu skutečnosti.</i>"
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:730
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:734
 msgid ""
 "<i>Emerald, verdant green gives way,\n"
 "Touched by shadow, dark dye of black,\n"
@@ -3292,7 +3305,7 @@ msgstr ""
 "odporná morová skvrna.</i>"
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:743
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:747
 msgid ""
 "<i>Crimson pool, essence of life,\n"
 "Flesh and blood flow away to rot,\n"
@@ -3303,42 +3316,42 @@ msgstr ""
 "nechají pouze kosti, jež zůstanou.</i>"
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:758
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:762
 msgid "This appears to be a wedding ring."
 msgstr "To vypadá jako svatební prsten."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:771
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:775
 msgid "This vial of holy water is inscribed with a cross and two rings."
 msgstr "Tato lahvička svěcené vody je popsána křížem a dvěma kroužky."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:783
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:787
 msgid "There is a torn up dress on this altar."
 msgstr "Na tom oltáři jsou roztrhané šaty."
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:796
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:800
 msgid "This amulet feels strangely cold."
 msgstr "Tento amulet je podivně chladný."
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:824
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:828
 msgid "The mages have hidden their gold somewhere else."
 msgstr "Mágové ukryli své zlato někde jinde."
 
 #. [message]: speaker=Lady Karae
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:841
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:845
 msgid "Darken Volk! I should have known it was you! What are you doing here?"
 msgstr "Darken Volk! Měl jsem vědět, že jsi to ty! Co tu děláš?"
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:845
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:849
 msgid "Taking back what is rightfully mine."
 msgstr "Beru si zpět, co mi právem náleží."
 
 #. [message]: speaker=Lady Karae
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:849
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:853
 msgid ""
 "As impudent as ever. What lies in that book is not meant for human eyes — "
 "yours or mine."
@@ -3347,19 +3360,19 @@ msgstr ""
 "tvé ani mé."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:853
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:857
 msgid "I am not here to argue."
 msgstr "Nejsem tu proto, abych se dohadoval."
 
 #. [message]: speaker=Lady Karae
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:857
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:861
 msgid ""
 "Of course you are not. I assume your arrogance has only grown over the years."
 msgstr ""
 "Jistěže ne. Předpokládám, že za ty roky tvá namyšlenost pouze vzrostla."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:861
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:865
 msgid ""
 "If you wish to continue lecturing me, by all means, do so. It will only make "
 "you easier to kill."
@@ -3368,28 +3381,28 @@ msgstr ""
 "zabít."
 
 #. [message]: speaker=Lady Karae
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:865
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:869
 msgid "I regret that it has come to this."
 msgstr "Mrzí mne, že to došlo až sem."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:877
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:881
 msgid "Someone was... messing... with some potions here."
 msgstr "Někdo si tu... hrál... s několika lektvary."
 
 #. [message]: speaker=Lady Karae
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:889
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:893
 msgid "Darken Volk... you... wouldn’t dare..."
 msgstr "Darkene Volku... neodvažuj se..."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:893
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:897
 msgid "Enough with your decrepit prattling."
 msgstr "Už bylo dost tvého ubohého žvanění."
 
 #. [message]: speaker=Darken Volk
 #. a vault is a big underground room, sort of like a gigantic basement
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:914
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:918
 msgid ""
 "I feel the breaking of an illusion spell. The book is in the vault in the "
 "northwest corner of the manor. We must find the passageway leading there!"
@@ -3398,7 +3411,7 @@ msgstr ""
 "sídla. Musíme najít průchod, který tam vede!"
 
 #. [objective]: condition=win
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:921
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:925
 msgid ""
 "Move Malin Keshar or Darken Volk through the passageway in the northwest "
 "leading to the vault"
@@ -3407,19 +3420,19 @@ msgstr ""
 "vedoucím do sklepení"
 
 #. [message]: speaker=unit
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:945
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:949
 msgid "Here is the passage to the vault!"
 msgstr "Tady je průchod do pokladnice!"
 
 #. [message]: speaker=RGuard
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:995
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:1024
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1265
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:999
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:1028
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1272
 msgid "Surround those necromancers! They cannot escape now!"
 msgstr "Obkličte ty nekromanty! Teď už nemohou uniknout!"
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:999
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:1003
 msgid ""
 "Fool boy! You took too long to defeat Karae! Now we are at the mercy of the "
 "city guards!"
@@ -3428,7 +3441,7 @@ msgstr ""
 "milost městským strážím!"
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:1028
+#: data/campaigns/Descent_Into_Darkness/scenarios/07b_A_Small_Favor2.cfg:1032
 msgid ""
 "Fool boy! You took too long to find the path to the vault! Now we are at the "
 "mercy of the city guards!"
@@ -3442,38 +3455,51 @@ msgid "A Small Favor — III"
 msgstr "Malá laskavost III"
 
 #. [side]
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:49
+#. Book guards
 #: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:50
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:53
 msgid "Guardian"
 msgstr "Strážce"
 
+#. [side]
+#. Book guards
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:52
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:53
+msgid "female^Guardian"
+msgstr "Strážkyně"
+
 #. [objective]: condition=win
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:204
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:207
 msgid "Retrieve the book and escape"
 msgstr "Získej knihu a uteč"
 
 #. [command]
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:370
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:377
 msgid "Mage"
 msgstr "Mág"
 
+#. [command]
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:377
+msgid "female^Mage"
+msgstr "Čarodějka"
+
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:460
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:467
 msgid "The book is very close, somewhere to the northwest."
 msgstr "Kniha je velmi blízko, někde severozápadně od nás."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:776
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:783
 msgid "The guards continue to pursue us."
 msgstr "Stráže nás nepřestávají pronásledovat."
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:790
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:797
 msgid "The guards are catching up to us."
 msgstr "Stráže nás dohánějí!"
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:804
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:811
 msgid ""
 "<i>Beware that, when fighting monsters, you yourself do not become a "
 "monster...</i>"
@@ -3482,7 +3508,7 @@ msgstr ""
 "netvorem...</i>"
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:815
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:822
 msgid ""
 "<i>Death is the twilight that follows the light of day.\n"
 "Life fades with the setting sun into darkness.\n"
@@ -3493,49 +3519,49 @@ msgstr ""
 "Bytí se zvedá a duše se znovu rodí do nekonečné noci.</i>"
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:828
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:835
 msgid "There are quite a few failed potions around here."
 msgstr "Je tu všude celkem dost nepodařených lektvarů."
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:839
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:846
 msgid "This coffin is empty."
 msgstr "Tahle rakev je prázdná."
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:855
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:862
 msgid "Be careful around those urns."
 msgstr "Dávej pozor na ty nádoby."
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:868
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:875
 msgid "Fancy, but I’ve no use for a new cloak right now."
 msgstr "Luxusní. Ale teď nepotřebuji nový plášť."
 
 #. [message]: id=Darken Volk
 #. The speaker addresses an undead minion.
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1012
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1019
 msgid "The book! Guard it with your unlife while I come to fetch it."
 msgstr "Kniha! Střež ji svým neživotem, zatímco si pro ni půjdu."
 
 #. [message]: id=Darken Volk
 #. The speaker addresses a human or a bat.
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1019
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1026
 msgid "The book! Guard it with your life while I come to fetch it."
 msgstr "Kniha! Střež ji svým životem, zatímco si pro ni půjdu."
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1049
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1056
 msgid "Hand that over."
 msgstr "Předej mi ji."
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1054
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1061
 msgid "Can’t it wait until we’re away from all these guards?"
 msgstr "Nemohlo by to počkat, až budeme pryč od těch stráží?"
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1059
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1066
 msgid ""
 "... Fine. There is a small tunnel in the cellar to the northeast. It will "
 "lead us far enough out of the city that we can escape pursuit."
@@ -3544,29 +3570,29 @@ msgstr ""
 "dost daleko od města, abychom mohli uniknout pronásledování."
 
 #. [objective]: condition=win
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1066
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1134
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1073
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1141
 msgid "Escape via the tunnel in the northeast cellar"
 msgstr "Uteč podzemní chodbou v severovýchodním sklepě"
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1094
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1228
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1101
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1235
 msgid "Let’s get out of here."
 msgstr "Pojďme odsud."
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1157
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1164
 msgid "We’ve got the book, but how do we get out of here?"
 msgstr "Knihu máme, ale jak se odsud dostaneme?"
 
 #. [message]: speaker=Malin Keshar
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1170
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1177
 msgid "Wait, you aren’t leaving me behind, are you?"
 msgstr "Počkej, nechceš mě tu nechat, že ne?"
 
 #. [objective]: condition=win
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1177
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1184
 msgid ""
 "Escape the manor (Malin reaches the tunnel in the northeast cellar before "
 "Darken Volk)"
@@ -3575,17 +3601,17 @@ msgstr ""
 "dříve než Darken Volk)"
 
 #. [objective]: condition=lose
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1181
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1188
 msgid "Darken Volk reaches the tunnel before Malin does"
 msgstr "Darken Volk se dostane k podzemní chodbě dříve než Malin"
 
 #. [message]: speaker=Darken Volk
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1205
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1212
 msgid "You have served me well, boy."
 msgstr "Sloužil jsi mi dobře, chlapče."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1211
+#: data/campaigns/Descent_Into_Darkness/scenarios/07c_A_Small_Favor3.cfg:1218
 msgid ""
 "As he heads into the tunnel, Darken Volk collapses the entrance, leaving "
 "Malin to be captured and executed by the city guards."
@@ -5334,19 +5360,19 @@ msgstr "Bláhový hrdina"
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:965
 msgid "That was quite the nightmare..."
-msgstr ""
+msgstr "To byl mimořádně zlý sen..."
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:969
 msgid ""
 "...unless it was not one? No. No no no. I don’t even want to think about "
 "that."
-msgstr ""
+msgstr "... ledaže by to nebyl sen? Ne. Ne, ne, ne. Na to nechci ani pomyslet."
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:973
 msgid "I need to go slaughter some foolish heroes to purge that from my mind."
-msgstr ""
+msgstr "Musím jít povraždit pár bláhových hrdinů, abych si vyčistil hlavu."
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:989
@@ -5643,6 +5669,7 @@ msgid "A cuttlefish! Perhaps I shall make it my pet."
 msgstr "Sépie! Možná si ji budu moct ochočit."
 
 #. [message]: speaker=Mal Keshar
+#. squiddy means "squid-like" in this sentence
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1426
 msgid "We meet again, squiddy one."
 msgstr "Znovu se setkáme, chapadlatá."
@@ -5650,14 +5677,15 @@ msgstr "Znovu se setkáme, chapadlatá."
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1452
 msgid "Get these tentacles off of me!"
-msgstr ""
+msgstr "Sundej ze mě ta chapadla!"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1465
 msgid "Release me at once you oversized piece of calamari— eeeeaaaaaaaaa!"
-msgstr ""
+msgstr "Okamžitě mě pusť, ty přerostlý mořský plode— ííjáááá!"
 
 #. [message]: speaker=narrator
+#. Mal Keshar is sinking...
 #: data/campaigns/Descent_Into_Darkness/scenarios/10_Endless_Night.cfg:1470
 msgid "<i>Blub... blub... blub...</i>"
 msgstr "<i>Blu... blu... blu...</i>"
@@ -6054,7 +6082,7 @@ msgstr "Krakatice"
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:118
 msgid "This cuttlefish will not escape me any longer! Hunt her down!"
-msgstr ""
+msgstr "Tahle sépie už mi neunikne! Ulovte ji!"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:152
@@ -6062,11 +6090,13 @@ msgid ""
 "Right, I got dragged down here without any of my minions. I suppose I will "
 "have to do this myself."
 msgstr ""
+"Jasně, stáhlo mě to sem dolů bez mých pohůnků. Předpokládám, že to budu "
+"muset udělat sám."
 
 #. [objective]: condition=win
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:161
 msgid "Hunt down Inky"
-msgstr ""
+msgstr "Ulov Inkyho"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:217
@@ -6076,17 +6106,17 @@ msgstr "Proč jsou ta chapadla tak velká...?"
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:230
 msgid "(<i>huff huff huff</i>)"
-msgstr ""
+msgstr "(<i>čichám čichám čichám</i>)"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:250
 msgid "I can see... the colors of the universe..!"
-msgstr ""
+msgstr "Vidím... barvy vesmíru...!"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:269
 msgid "The stars go whirly whirl and turn into..."
-msgstr ""
+msgstr "Hvězdy víří a mění se v..."
 
 #. [message]: speaker=Mal Keshar
 #. He's high so basically this is gibberish describing mushrooms
@@ -6111,7 +6141,7 @@ msgstr "... houbičky, počkejte na mě...!"
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:324
 msgid "(<i>huff huff</i>)"
-msgstr ""
+msgstr "(<i>čichám čichám</i>)"
 
 #. [message]: speaker=Mal Keshar
 #. He breaks the fourth wall here because he's enlightened from the shrooms of course, so he talks directly to the player
@@ -6138,7 +6168,7 @@ msgstr "OSVÍCENÝ"
 #. [unit]: type=Necrophage Necron, id=Necron
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:390
 msgid "Necron"
-msgstr ""
+msgstr "Nekron"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:400
@@ -6147,58 +6177,61 @@ msgid ""
 "disgusting. Maybe I can send it to a quick death against all those Foolish "
 "Heroes."
 msgstr ""
+"... to je ale strašná hromada masa. I na požírače mrtvých je to víc než "
+"nechutné. Možná bych to mohl poslat na rychlou smrt proti všem těm hloupým "
+"hrdinům."
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:428
 msgid "You are not the creature I seek!"
-msgstr ""
+msgstr "Ty nejsi ten tvor, kterého hledám!"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:467
 msgid "Oh for the love of... not these slimy things again..."
-msgstr ""
+msgstr "Pro lásku... tyhle slizké věci už ne..."
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:499
 msgid ""
 "... wait a second, is this creature even supposed to live in this kind of "
 "habitat?"
-msgstr ""
+msgstr "... počkat, může ten tvor vůbec žít v takovém prostředí?"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:531
 msgid "The creatures down here keep getting stranger and stranger."
-msgstr ""
+msgstr "Tvorové tady dole jsou stále podivnější a podivnější."
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:572
 msgid "Aha!"
-msgstr ""
+msgstr "Aha!"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:576
 msgid "Finally, I have found you! Now hold still for just a moment..."
-msgstr ""
+msgstr "Konečně jsem tě našel! Teď se chvíli nehýbej..."
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:597
 msgid "Ha! I have you now!"
-msgstr ""
+msgstr "Ha! Teď tě mám!"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:610
 msgid "... what’s that sound?"
-msgstr ""
+msgstr "... co je to za zvuk?"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:636
 msgid "Where did you come from? Get off of me!"
-msgstr ""
+msgstr "Kde ses tu vzal? Slez ze mě!"
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:675
 msgid "Uh oh."
-msgstr ""
+msgstr "O ou."
 
 #. [message]: speaker=Mal Keshar
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:714
@@ -6208,12 +6241,12 @@ msgstr "Mizím odsud!"
 #. [message]: speaker=unit
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:739
 msgid "Aaargh, so many tentacles! Aieeeeee!!!"
-msgstr ""
+msgstr "Aaargh, tolik chapadel! Ajííí!!!"
 
 #. [story]
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:749
 msgid "Bad Ending"
-msgstr ""
+msgstr "Špatný konec"
 
 #. [part]
 #: data/campaigns/Descent_Into_Darkness/scenarios/11_Squidville.cfg:751
@@ -6223,6 +6256,9 @@ msgid ""
 "no more than a few decorative elements around the watery backdrop of the "
 "village of squids for all eternity."
 msgstr ""
+"Naneštěstí pro něj byl Mal Keshar přemožen hordou chapadel. Jeho iluze "
+"o vznešenosti byly zničeny a jeho kostěné pozůstatky se navždy staly jen "
+"několika ozdobnými prvky na pozadí vodní vesnice chobotnic."
 
 #. [unit_type]: id=Apprentice Mage, race=human
 #: data/campaigns/Descent_Into_Darkness/units/Apprentice_Mage.cfg:4
@@ -6312,7 +6348,7 @@ msgstr ""
 #. [attack]: type=blade
 #: data/campaigns/Descent_Into_Darkness/units/Ghast2.cfg:29
 msgid "bite"
-msgstr ""
+msgstr "kousnutí"
 
 #. [advancement]: id=mal_keshar_amla_melee
 #. [advancement]: id=eidolon_baneblade
@@ -6502,7 +6538,7 @@ msgstr "Získává schopnost sžírání"
 #. [attack]: type=blade
 #: data/campaigns/Descent_Into_Darkness/units/Necrophage2.cfg:18
 msgid "claws"
-msgstr ""
+msgstr "drápy"
 
 #. [advancement]
 #: data/campaigns/Descent_Into_Darkness/units/Spectral_Servant.cfg:79
@@ -6883,24 +6919,24 @@ msgstr ""
 #. [plague]: id=ghoulfication, type=Ghoul
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1039
 msgid "ghoulfication"
-msgstr ""
+msgstr "zžírání"
 
 #. [plague]: id=ghoulfication, type=Ghoul
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1040
 msgid "When a unit is killed by this attack, it turns into a ghoul."
-msgstr ""
+msgstr "Když je jednotka zabita tímto útokem, promění se na požírače mrtvých."
 
 #. [dummy]: id=did_starving
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1048
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1049
 msgid "starving"
-msgstr ""
+msgstr "hladovění"
 
 #. [dummy]: id=did_starving
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1050
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1051
 msgid "This unit loses 1 hitpoint every turn."
-msgstr ""
+msgstr "Tato jednotka ztrácí každé kolo 1 bod zdraví."
 
 #. [leadership]: id=masochism1
 #. [leadership]: id=masochism2
@@ -6919,12 +6955,12 @@ msgstr "masochismus"
 #. [leadership]: id=masochism1
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1096
 msgid "This unit gains up to 50% damage as its hitpoints are reduced."
-msgstr ""
+msgstr "Jak této jednotce ubývá zdraví, způsobuje až o 50 % větší zranění."
 
 #. [leadership]: id=masochism2
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1108
 msgid "This unit gains up to 100% damage as its hitpoints are reduced."
-msgstr ""
+msgstr "Jak této jednotce ubývá zdraví, způsobuje až o 100 % větší zranění."
 
 #. [resistance]: id=did_drunk
 #: data/campaigns/Descent_Into_Darkness/utils/abilities.cfg:1120
@@ -7054,7 +7090,7 @@ msgstr "Získává schopnost oblak smrti"
 #: data/campaigns/Descent_Into_Darkness/utils/amlas.cfg:1029
 #: data/campaigns/Descent_Into_Darkness/utils/amlas.cfg:1056
 msgid "Gain increasing damage as hitpoints are reduced"
-msgstr ""
+msgstr "Získat rostoucí sílu útoku při ubývajícím zdraví"
 
 #. [advancement]: id=necron_ghoulfication
 #: data/campaigns/Descent_Into_Darkness/utils/amlas.cfg:1083

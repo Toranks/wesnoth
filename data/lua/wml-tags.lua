@@ -12,9 +12,6 @@ Note: When adding new WML tags, unless they're very simple, it's preferred to
 add a new file in the "data/lua/wml" directory rather than implementing it in this file.
 The file will then automatically be loaded by the above require statement.
 
-Also note: The above on_load event needs to be registered before any other on_load events.
-That means before loading the WML tags via wesnoth.require "wml".
-
 ]]
 
 function wml_actions.sync_variable(cfg)
@@ -1014,6 +1011,10 @@ end
 
 function wml_actions.set_achievement(cfg)
 	wesnoth.achievements.set(cfg.content_for, cfg.id)
+end
+
+function wml_actions.set_sub_achievement(cfg)
+	wesnoth.achievements.set_sub_achievement(cfg.content_for, cfg.id, cfg.sub_id)
 end
 
 function wml_actions.progress_achievement(cfg)
